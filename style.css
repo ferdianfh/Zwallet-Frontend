@@ -17,9 +17,7 @@ body {
 
 }
 
-/* ============================== LOGIN PAGE ====================================== */
-
-/* styling for login page */
+/* styling for login page and sign up page */
 .container {
     width: 100%;
     height: 100%;
@@ -37,6 +35,9 @@ body {
     background-color: #FFF;
     width: 41%;
 }
+
+/* ============================== LOGIN PAGE ====================================== */
+
 /* positioning for left page */
 .inner-page { 
     width: 50%;
