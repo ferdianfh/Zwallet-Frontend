@@ -17,6 +17,7 @@ body {
 
 }
 
+/* ============================== LOGIN PAGE & SIGN UP PAGE ====================================== */
 /* styling for login page and sign up page */
 .container {
     width: 100%;
@@ -35,9 +36,6 @@ body {
     background-color: #FFF;
     width: 41%;
 }
-
-/* ============================== LOGIN PAGE ====================================== */
-
 /* positioning for left page */
 .inner-page { 
     width: 50%;
@@ -105,15 +103,6 @@ body {
     margin-top: -25px;
     margin-left: 25px;
 }
-/* styling forgot password */
-.forgot-pass {
-    float: right;
-    text-align: right;
-    margin-top: -60px;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(58, 61, 66, 0.8);
-}
 /* styling login button */
 .btn-login {
     width: 100%;
@@ -134,10 +123,28 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 23px;
-    text-align: center;
+    text-align: left;
     color: rgba(58, 61, 66, 0.8);
     margin-left: -50px;
 }
 span {
     color: #6379FA;
+}
+
+/* ============================== LOGIN PAGE ====================================== */
+/* styling forgot password */
+.forgot-pass {
+    float: right;
+    text-align: right;
+    margin-top: -60px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(58, 61, 66, 0.8);
+}
+
+/* ============================== SIGN UP PAGE ====================================== */
+/* sign up button */
+.btn-login.signup {
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
