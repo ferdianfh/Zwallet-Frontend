@@ -149,7 +149,7 @@ span {
     margin-bottom: 30px;
 }
 
-/* ============================== HOME PAGE ========================================== */
+/* ============================== HOME PAGE, HISTORY PAGE ========================================== */
 /* styling for header */
 .header {
     height: 100%;
@@ -249,6 +249,31 @@ span {
     margin-top: 170px;
 }
 
+/* styling for footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 68px;
+    background-color: #6379F4;
+    justify-content: space-between;
+}
+.copyright, .contact, .mail {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #EFEFEF;
+}
+.copyright {
+    margin-left: 85px;
+}
+.contact {
+    margin-right: -550px;
+}
+.mail {
+    margin-right: 85px;
+}
+
+/* ========================================= HOME PAGE ====================================================== */
 /* styling for bar history */
 .history-bar {
     display: flex;
@@ -326,26 +351,3 @@ span {
     border-radius: 25px;
 }
 
-/* styling for footer */
-.footer {
-    display: flex;
-    flex-direction: row;
-    height: 68px;
-    background-color: #6379F4;
-    justify-content: space-between;
-}
-.copyright, .contact, .mail {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
-    color: #EFEFEF;
-}
-.copyright {
-    margin-left: 85px;
-}
-.contact {
-    margin-right: -550px;
-}
-.mail {
-    margin-right: 85px;
-}
