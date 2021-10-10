@@ -351,3 +351,75 @@ span {
     border-radius: 25px;
 }
 
+/* =========================================== HISTORY PAGE ============================================== */
+/* styling for transaction history */
+.transtory {
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+    margin: 35px;
+    margin-right: 85px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 15px;
+}
+.text-transtory {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+}
+.week, .month {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: #7A7886;
+}
+.spend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.spend-desc {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.spend-box.desc {
+    margin-left: 10px;
+    margin-top: -15px;
+}
+/* styling text nominal */
+.spend-nominal {
+    margin-right: 15px;
+    padding: 5px;
+}
+.spend-nominal.plus {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #1EC15F;
+}
+.spend-nominal.minus {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #FF5B37;
+}
+/* another styling for name and description  */
+p.who {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4D4B57;
+}
+p.what {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7A7886;
+}
