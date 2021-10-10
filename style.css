@@ -148,3 +148,204 @@ span {
     margin-top: 50px;
     margin-bottom: 30px;
 }
+
+/* ============================== HOME PAGE ========================================== */
+/* styling for header */
+.header {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+.nav {
+    flex: 50%;
+}
+.nav.lefts {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 30px;
+    color: #6379F4;
+    margin-left: 70px;
+}
+.nav.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.nav-box {
+    margin: 6px;
+    margin-top: 10px;
+}
+.nav-box.user {
+    display: flex;
+    flex-direction: column;
+}
+.user p {
+    margin: 0;
+    text-align: center;
+}
+.user .name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 31px;
+    text-align: center;
+    color: #3A3D42;
+}
+.user .phone {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: rgba(58, 61, 66, 0.9);
+}
+.nav-box.notif {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+/* styling for main */
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    margin-top: 5px;
+}
+/* styling for bar menu */
+.menu-bar {
+    display: flex;
+    flex: 30%;
+    flex-direction: column;
+    margin: 35px;
+    margin-left: 85px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+.menu-items {
+    display: flex;
+    margin: 10x;
+    padding-left: 50px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    color: rgba(58, 61, 66, 0.8);
+}
+.menu-items.dashboard {
+    color: #6379F4;
+}
+.blue img {
+    display: flex;
+    margin-top: 17px;
+    margin-left: -50px;
+}
+.menu-items p {
+    margin: 20px;
+    margin-left: 40px;
+}
+.menu-items.logout {
+    margin-top: 170px;
+}
+
+/* styling for bar history */
+.history-bar {
+    display: flex;
+    flex: 70%;
+    margin: 35px;
+    margin-right: 85px;
+    flex-direction: column;
+}
+.balance {
+    display: flex;
+    flex: 25%;
+    padding: 10px;
+    background-color: #6379F4;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.balance .saldo {
+    margin-left: 20px;
+}
+.text-balance {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #E0E0E0;
+}
+.text-saldo {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.text-phone {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #DFDCDC;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.transfer, .topup {
+    display: flex;
+    border: 1px solid #FFFFFF;
+    padding-left: 15px;
+    padding-right: 20px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+} 
+/* styling for charts and history */
+.transaction {
+    display: flex;
+    flex: 75%;
+}
+.transaction .charts {
+    flex: 50%;
+    margin-top: 10px;
+    margin-right: 5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+.transaction .history {
+    flex: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+
+/* styling for footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 68px;
+    background-color: #6379F4;
+    justify-content: space-between;
+}
+.copyright, .contact, .mail {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #EFEFEF;
+}
+.copyright {
+    margin-left: 85px;
+}
+.contact {
+    margin-right: -550px;
+}
+.mail {
+    margin-right: 85px;
+}
