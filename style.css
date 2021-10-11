@@ -423,3 +423,65 @@ p.what {
     line-height: 19px;
     color: #7A7886;
 }
+
+/* =========================================== TRANSFER PAGE ======================================================= */
+/* styling search column */
+.search-receiver {
+    display: flex;
+    flex-direction: row;
+    background: rgba(58, 61, 66, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+}
+.lup {
+    margin-top: -10px;
+    margin-left: -8px;
+}
+.search-input {
+    margin-top: 10px;
+}
+input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    margin-left: 20px;
+    background: rgba(213, 213, 219, 0.1);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: rgba(58, 61, 66, 0.4);
+}
+/* styling receiver */
+.transtory.receiver {
+    display: flex;
+    flex-direction: column;
+}
+.receiver {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.receiver img {
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.receiver-profile {
+    margin-left: 20px;
+}
+.receiver-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #4D4B57;
+    padding-bottom: 0;
+}
+.receiver-phone {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7A7886;
+}
