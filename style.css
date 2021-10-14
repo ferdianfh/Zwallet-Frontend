@@ -19,17 +19,18 @@ body {
 
 /* ============================== LOGIN PAGE & SIGN UP PAGE ====================================== */
 /* styling for login page and sign up page */
-.container {
+.login-page {
     width: 100%;
-    height: 176vh;
+    height: 100%;
     display: flex;
+    flex-direction: row;
     background-color: #6379F4;
 }
 .left {
     position: relative;
-    background-color: #6379F4;
+    background-color: #6379F4 !important;
     width: 59%;
-    height: 100vh;
+    height: 100%;
     background: url(images/bglogin.svg) no-repeat;
     background-size: cover;
 }
@@ -81,6 +82,7 @@ body {
     width: 100%;
     overflow: hidden;
     margin-left: -50px;
+    background-color: peachpuff;
 }
 .form-input input {
     border: 0;
@@ -120,6 +122,15 @@ body {
     background-color: #6379FA;
     color: #FFF;
 }
+.btn-login:hover {
+    background-color: #4c65f5;
+    box-shadow: 3px 3px 5px #8796ee;
+    cursor: pointer;
+}
+.btn-login:active {
+    background-color: #EFEFEF;
+    color: #4c65f5;
+}
 .create {
     font-weight: normal;
     font-size: 16px;
@@ -130,6 +141,12 @@ body {
 }
 span {
     color: #6379FA;
+    font-weight: bold;
+}
+span:hover {
+    color: #4c65f5;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* ============================== LOGIN PAGE ====================================== */
@@ -275,7 +292,7 @@ span {
 }
 
 /* ========================================= HOME PAGE ====================================================== */
-/* styling for bar history */
+/* styling for bar history and balance */
 .history-bar {
     display: flex;
     flex: 70%;
@@ -343,6 +360,7 @@ span {
     margin-right: 5px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
+    background-color: palevioletred;
 }
 .transaction .history {
     flex: 50%;
@@ -350,6 +368,7 @@ span {
     margin-left: 5px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
+    background-color: plum;
 }
 
 /* =========================================== HISTORY PAGE ============================================== */
@@ -432,7 +451,7 @@ p.what {
     flex-direction: row;
     background: rgba(58, 61, 66, 0.1);
     border-radius: 12px;
-    padding: 12px;
+    padding: 10px;
 }
 .lup {
     margin-top: -10px;
@@ -440,11 +459,14 @@ p.what {
 }
 .search-input {
     margin-top: 10px;
+    margin-right: 20px;
+    width: 100%;
 }
 input {
     border: 0;
     outline: 0;
     width: 100%;
+    /* caret-color: red; */
     margin-left: 20px;
     background: rgba(213, 213, 219, 0.1);
     font-weight: normal;
