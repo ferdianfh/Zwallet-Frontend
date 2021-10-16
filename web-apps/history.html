@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwallet | Transaction History List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="nav-logo">
+            <h2>Zwallet</h2>
+        </div>
+        <div class="user-profile">
+            <img class="user-profile-pic" src="src/pictures/robert.svg" alt="Robert" width="57">
+            <div class="user-profile-name">
+                <p class="name">Robert Chandler</p>
+                <p class="phone">+62 8139 3877 7946</p>
+            </div>
+            <img class="notification" src="src/icons/bell.svg" alt="Bell" width="27">
+        </div>
+    </header>
+    <main class="main">
+        <!-- this is for menu bar on the left side -->
+        <section class="menu-bar">
+            <section class="menu-bar-dashboard">
+                <div class="menu-items">
+                    <img src="src/icons/grid-grey.svg" alt="Grid">
+                    <p>Dashboard</p>
+                </div>
+                <div class="menu-items">
+                    <img src="src/icons/arrow-up.svg" alt="Transfer">
+                    <p>Transfer</p>
+                </div>
+                <div class="menu-items">
+                    <img src="src/icons/plus.svg" alt="Top Up">
+                    <p>Top Up</p>
+                </div>
+                <div class="menu-items">
+                    <img src="src/icons/user.svg" alt="Profile">
+                    <p>Profile</p>
+                </div>
+            </section>
+            <section class="menu-bar-logout">
+                <div class="menu-items">
+                    <img src="src/icons/log-out.svg" alt="Log Out">
+                    <p>Log Out</p>
+                </div>
+            </section>
+        </section>
+        <!-- this is for main content on the right side -->
+        <section class="dashboard">
+            <p class="transaction-history-title">Transaction History</p>
+            <p class="weekly">This Week</p>
+            <section class="transaction-history-detail">
+                <div class="transtory-detail left">
+                    <img src="src/pictures/samuel.svg" alt="Samuel Suhi">
+                    <div class="profile-detail">
+                        <p class="profile-detail-name">Samuel Suhi</p> 
+                        <p class="profile-detail-desc">Transfer</p>
+                    </div>
+                </div>
+                <p class="nominal-income">+Rp50.000</p>
+            </section>
+            <section class="transaction-history-detail">
+                <div class="transtory-detail left">
+                    <img src="src/pictures/netflix.svg" alt="Netflix">
+                    <div class="profile-detail">
+                        <p class="profile-detail-name">Netflix</p> 
+                        <p class="profile-detail-desc">Subscription</p>
+                    </div></div>
+                <p class="nominal-expense">-Rp149.000</p>
+            </section>
+            <p class="monthly">This Month</p>
+            <section class="transaction-history-detail">
+                <div class="transtory-detail left">
+                    <img src="src/pictures/christine.svg" alt="Christine Mar">
+                    <div class="profile-detail">
+                        <p class="profile-detail-name">Christine Marimar</p> 
+                        <p class="profile-detail-desc">Transfer</p>
+                    </div>
+                </div>
+                <p class="nominal-income">+Rp150.000</p>
+            </section>
+            <section class="transaction-history-detail">
+                <div class="transtory-detail left">
+                    <img src="src/pictures/adobe.svg" alt="Adobe Inc.">
+                    <div class="profile-detail">
+                        <p class="profile-detail-name">Adobe Inc.</p> 
+                        <p class="profile-detail-desc">Subscription</p>
+                    </div>
+                </div>
+                <p class="nominal-expense">-Rp259.000</p>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copyright">2020 Zwallet. All right reserved.</p>
+        <div class="contact">
+            <p>+62 5637 8882 9901</p>
+            <p>contact@zwallet.com</p> 
+        </div>
+    </footer>
+</body>
+</html>
