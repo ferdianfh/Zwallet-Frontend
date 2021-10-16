@@ -348,6 +348,7 @@
     }
 
 /* ======================= styling for transaction history page only ========================= */
+    /* dashboard used for container in history and transfer pages */
     .dashboard {
         display: flex;
         flex-direction: column;
@@ -426,4 +427,68 @@
         box-shadow: 0px 2px 5px #e6e6e7;
         border-radius: 10px;
         background-color: #fdfdfd;
+    }
+
+
+/* ======================= styling for transfer receiver page only ========================= */
+    .search-receiver-title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #3A3D42;
+        margin-left: 25px;
+    }
+    .search-receiver-input {
+        display: flex;
+        flex-direction: row;
+        background: rgba(58, 61, 66, 0.1);
+        border-radius: 12px;
+        padding: 10px;
+        margin: 2px 30px 2px 25px;
+    }
+    input {
+        border: 0;
+        outline: 0;
+        width: 100%;
+        margin-left: 20px;
+        background: rgba(213, 213, 219, 0.1);
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: rgba(58, 61, 66, 0.4);
+    }
+    /* styling for each receiver */
+    .receivers {
+        display: flex;
+        flex-direction: row;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin: 10px 30px 2px 25px;
+    }
+    .receiver-picture, .receiver-detail, .search-icon {
+        margin-left: 20px;
+    }
+    .receiver-name {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 22px;
+        color: #4D4B57;
+        margin: 10px 0px 2px 2px;
+    }
+    .receiver-number {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #7A7886;
+        margin: 5px 0px 10px 2px;
+    }
+    /* floating effects with hover and translate */
+    .receivers:hover {
+        cursor: pointer;
+        transform: translate(5px, -5px);
+        background-color: #f3f3f5;
+    }
+    .receivers:active {
+        background-color: #FFFFFF;
     }
