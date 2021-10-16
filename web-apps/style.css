@@ -346,3 +346,84 @@
         cursor: pointer;
         text-decoration: underline;
     }
+
+/* ======================= styling for transaction history page only ========================= */
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        background-color: #FFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 25px;
+        margin: 10px 87px 10px 10px;
+    }
+    .transaction-history-title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #3A3D42;
+        margin: 15px 5px 5px 30px;
+    }
+    .weekly, .monthly {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #7A7886;
+        margin: 15px 5px 5px 30px;
+    }
+    /* make a container for each profile */
+    .transaction-history-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 36px 8px 30px;
+    }
+    /* this is for picture, name, and description */
+    .transtory-detail.left {
+        display: flex;
+        flex-direction: row;
+    }
+    .profile-detail {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px 0px 20px;
+    }
+    .profile-detail-name {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4D4B57;
+        margin: 8px 2px 2px 2px;
+    }
+    .profile-detail-desc {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #7A7886;
+        margin: 2px 2px 2px 2px;
+    }
+    /* styling for nominal */
+    .nominal-income {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: right;
+        color: #1EC15F;
+        margin: 23px 12px 2px 2px;
+    }
+    .nominal-expense {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: right;
+        color: #FF5B37;
+        margin: 23px 12px 2px 2px;
+    }
+    /* floating effect with transform property */
+    .transaction-history-detail:hover {
+        cursor: pointer;
+        transform: translate(5px, -8px);
+        box-shadow: 0px 2px 5px #e6e6e7;
+        border-radius: 10px;
+        background-color: #fdfdfd;
+    }
