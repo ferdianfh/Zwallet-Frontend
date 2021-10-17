@@ -31,14 +31,21 @@
         <!-- this is for menu bar on the left side -->
         <section class="menu-bar">
             <section class="menu-bar-dashboard">
-                <div class="menu-items">
-                    <img src="src/icons/grid-grey.svg" alt="Grid">
-                    <p>Dashboard</p>
-                </div>
-                <div class="menu-items">
-                    <img src="src/icons/arrow-up.svg" alt="Transfer">
-                    <p>Transfer</p>
-                </div>
+                <!-- link to home page -->
+                <a href="home.html" rel="noopener noreferrer">
+                    <div class="menu-items">
+                        <img src="src/icons/grid-grey.svg" alt="Grid">
+                        <p>Dashboard</p>
+                    </div>
+                </a>
+                <!-- link to transfer receiver page -->
+                <a href="transfer-receiver.html" rel="noopener noreferrer">
+                    <div class="menu-items">
+                        <img src="src/icons/arrow-up.svg" alt="Transfer">
+                        <p>Transfer</p>
+                    </div>
+                </a>
+                
                 <div class="menu-items">
                     <img src="src/icons/plus.svg" alt="Top Up">
                     <p>Top Up</p>
@@ -62,13 +69,17 @@
                 <img class="search-icon" src="src/icons/search.svg" alt="Search">
                 <input class="receiver-input" placeholder="Search receiver here" type="email" name="Transfer Receiver" id="receiver">
             </div>
-            <div class="receivers">
-                <img class="receiver-picture" src="src/pictures/samuel.svg" alt="Samuel" width="52px">
-                <div class="receiver-detail">
-                    <p class="receiver-name">Samuel Suhi</p>
-                    <p class="receiver-number">+62 813-8492-9994</p>
+            <!-- link to transfer input page -->
+            <a href="transfer-input.html" rel="noopener noreferrer">
+                <div class="receivers">
+                    <img class="receiver-picture" src="src/pictures/samuel.svg" alt="Samuel" width="52px">
+                    <div class="receiver-detail">
+                        <p class="receiver-name">Samuel Suhi</p>
+                        <p class="receiver-number">+62 813-8492-9994</p>
+                    </div>
                 </div>
-            </div>
+            </a>
+            
             <div class="receivers">
                 <img class="receiver-picture" src="src/pictures/momo.svg" alt="Momo" width="52px">
                 <div class="receiver-detail">

@@ -34,10 +34,14 @@
                     <img src="src/icons/grid-grey.svg" alt="Grid">
                     <p>Dashboard</p>
                 </div>
-                <div class="menu-items">
-                    <img src="src/icons/arrow-up.svg" alt="Transfer">
-                    <p>Transfer</p>
-                </div>
+                <!-- link to transfer receiver page -->
+                <a href="transfer-receiver.html">
+                    <div class="menu-items">
+                        <img src="src/icons/arrow-up.svg" alt="Transfer">
+                        <p>Transfer</p>
+                    </div>
+                </a>
+                
                 <div class="menu-items">
                     <img src="src/icons/plus.svg" alt="Top Up">
                     <p>Top Up</p>
@@ -63,7 +67,8 @@
                     <p class="saldo-contact">+62 813-9387-7946</p>
                 </div>
                 <div class="btn-transaction">
-                    <button class="transfer">
+                    <!-- link to transfer receiver page -->
+                    <button onclick="document.location='transfer-receiver.html'" class="transfer">
                         <img src="src/icons/transfer.svg" alt="Transfer">
                         <p>Transfer</p>
                     </button>
@@ -94,7 +99,8 @@
                 <section class="history-content-transaction">
                     <div class="history-transaction-title">
                         <p>Transaction History</p>
-                        <a href="history.html" target="_blank" rel="noopener noreferrer"> 
+                        <!-- link to transaction history page -->
+                        <a href="history.html" rel="noopener noreferrer"> 
                             <p class="history-page-link">See All</p> 
                         </a>
                     </div>
