@@ -446,7 +446,7 @@
         padding: 10px;
         margin: 2px 30px 2px 25px;
     }
-    input {
+    .receiver-input {
         border: 0;
         outline: 0;
         width: 100%;
@@ -458,6 +458,7 @@
         color: rgba(58, 61, 66, 0.4);
     }
     /* styling for each receiver */
+    /* this is also use to style receiver in transfer input page */
     .receivers {
         display: flex;
         flex-direction: row;
@@ -492,3 +493,106 @@
     .receivers:active {
         background-color: #FFFFFF;
     }
+
+/* ======================= styling for transfer input page only ========================= */
+    .money-transfer-title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #3A3D42;
+        margin-left: 25px;
+    }
+    .money-transfer-instruction {
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px 30px 2px 25px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: #7A7886;
+    }
+    /* styling input form transfer */
+    .money-transfer-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .money-transfer-input input {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 42px;
+        text-align: center;
+        color: #639AF4;
+        caret-color: red;
+        border: 0;
+        outline: 0;
+    }
+    ::placeholder {
+        color: #B5BDCC;
+    }
+    .money-transfer-balance {
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #3A3D42;
+    }
+    /* input form for notes */
+    .money-transfer-desc {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .edit-icon {
+        position: relative;
+        padding-bottom: 8px;
+    }
+    .money-transfer-note {
+        border: 0;
+        outline: 0;
+        border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+        padding-left: 35px;
+        margin-left: -25px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #3A3D42;
+    }
+    /* effect on note input when filled */ 
+    .money-transfer-note:focus {
+        border-bottom: 2.5px solid #6379F4;
+    }
+    /* styling continue button */
+    .continue-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .btn-continue {
+        border: 0;
+        color: #FFF;
+        font-weight: bold;
+        background: #6379F4;
+        box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+        border-radius: 12px;
+        padding: 15px 35px 15px 35px;
+        margin: 18px 45px 2px 2px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    /* cool effect on button */
+    .btn-continue:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        background-color: #4a64f8;
+    }
+    .btn-continue:active {
+        background-color: #FFFFFF;
+        color: #4a64f8;
+        box-shadow: 0px 2px 10px #B5BDCC;
+}
