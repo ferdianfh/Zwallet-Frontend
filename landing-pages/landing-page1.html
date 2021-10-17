@@ -58,13 +58,13 @@
             display: flex;
             flex-direction: column;
             height: 100vh;
-            background-color: papayawhip;
+            align-items: center;
         }
         .footer-content {
             display: flex;
             flex-direction: column;
             height: 40vh;
-            background-color: teal;
+            background-color: #6379F4;
         }
         span {
             color: #6379F4;
@@ -198,7 +198,7 @@
 
         /* styling for merchant section*/
         .merchant-items:hover {
-            transform: scale(1.3);
+            transform: scale(1.5);
             transition: 0.3s;
         }
 
@@ -223,7 +223,6 @@
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
-            /* justify-content: center; */
             align-items: center;
             text-align: center;
             margin-left: 10px;
@@ -299,6 +298,123 @@
             cursor: pointer;
             transform: translateX(-20px);
             transition: 0.3s;
+        }
+
+        /* styling for user review section */
+        .user-review-content {
+            display: flex;
+            flex-direction: row;
+        }
+        .user-review-title {
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 63px;
+            color: #3A3D42;
+        }
+        .user-review-desc {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 31px;
+            text-align: center;
+            color: #3A3D42;
+        }
+        .review-detail {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+            align-items: center;
+            background-color: #FFFFFF;
+            box-shadow: 0px 10px 90px rgba(197, 197, 197, 0.15);
+            border-radius: 30px;
+            padding: 15px;
+        }
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 35px;
+            color: #373C46;
+            margin-bottom: 0;
+        }
+        .reviewer-job {
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 29px;
+            text-align: center;
+            color: #56585B;
+        }
+        .review-description {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 31px;
+            text-align: center;
+            color: #3A3D42;
+        }
+        .direction {
+            border-radius: 10px;
+            padding: 0;
+            margin: 144px 52px 142px 24px;
+        }
+        /* cool effect on user review  section */
+        .direction.left:hover {
+            cursor: pointer;
+            transform: translateX(-20px);
+            box-shadow: 10px 10px 90px rgba(197, 197, 197, 0.15);
+            background-color: #f5f5f5;
+            transition: 0.1s;
+        }
+        .direction.right:hover {
+            cursor: pointer;
+            transform: translateX(20px);
+            box-shadow: 10px 10px 90px rgba(197, 197, 197, 0.15);
+            background-color: #eeeeee;
+            transition: 0.1s;
+        }
+        .review-detail:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            box-shadow: 20px 20px 120px rgba(197, 197, 197, 0.15);
+        }
+
+        /* styling for footer section */
+        .foot-notes {
+            margin-left: 100px;
+            margin-bottom: 20px;
+        }
+        .foot-notes-title {
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 31px;
+            color: #FFFFFF;
+        }
+        .foot-notes-desc {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            color: rgba(239, 239, 239, 0.75);
+        }
+        .copyright {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            color: rgba(239, 239, 239, 0.9);
+            border-top: 1px solid rgba(255, 255, 255, 0.6);
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .contact {
+            display: flex;
+            flex-direction: row;
+        }
+        .contact-number {
+            margin-right: 50px;
+        }
+        /* hover effect on footer */
+        .contact-number:hover, .contact-mail:hover {
+            cursor: pointer;
+            text-decoration: underline;
         }
     </style>
 
@@ -383,11 +499,33 @@
             </div>
         </section>
 
-        <section class="user-review"></section>
+        <section class="user-review">
+            <h1 class="user-review-title">What Users are <span>Saying.</span></h1>
+            <p class="user-review-desc">We have some great features from the application and it’s totally free <br> to use by all users around the world.</p>
+            <div class="user-review-content">
+                <img src="src/arrow-left.svg" alt="Arrow Left" class="direction left">
+                <div class="review-detail">
+                    <img src="src/alex.png" alt="Alex Hansinburg" width="72px">
+                    <p class="reviewer-name">Alex Hansinburg</p>
+                    <p class="reviewer-job">Designer</p>
+                    <p class="review-description">“This is the most outstanding app that I’ve ever try in my live, this app is such an amazing masterpiece and <br> it’s suitable for you who is bussy with their bussiness and must transfer money to another person out there. <br> Just try this app and see the power!”</p>
+                </div>
+                <img src="src/arrow-right.svg" alt="Arrow Right" class="direction right">
+            </div>
+        </section>
     </main>
     <footer class="footer-content">
-        <section class="foot-notes"></section>
-        <section class="copyright"></section>
+        <section class="foot-notes">
+            <p class="foot-notes-title">Zwallet</p>
+            <p class="foot-notes-desc">Simplify financial needs and saving <br> much time in banking needs with <br> one single app.</p>
+        </section>
+        <section class="copyright">
+            <p class="copyright-text">2020 Zwallet. All right reserved.</p>
+            <div class="contact">
+                <p class="contact-number">+62 5637 8882 9901</p>
+                <p class="contact-mail">contact@zwallet.com</p>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
