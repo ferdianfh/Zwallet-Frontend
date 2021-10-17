@@ -25,6 +25,9 @@
         flex: 0.5;
         background-color: #6379F4;
     }
+    a {
+        text-decoration: none;
+    }
     /* styling for header */
     .nav-logo {
         display: flex;
@@ -69,10 +72,12 @@
     .user-profile-pic:hover, .user-profile-name:hover, .notification:hover {
         cursor: pointer;
         transform: translateY(-5px);
+        transition: 0.3s;
     }
     .user-profile-name .name:hover, .user-profile-name .phone:hover  {
         font-weight: bold;
         color: #4c65f5;
+        transition: 0.3s;
     } 
     /* styling for main content */
     /* styling menu bar on the left side */
@@ -118,6 +123,7 @@
         border-left: 3px solid #6379F4;
         color: #6379F4 !important;
         font-weight: bold;
+        transition: 0.3s;
     }
 
     /* styling for footer */
@@ -216,6 +222,8 @@
     button.transfer:hover, button.topup:hover {
         cursor: pointer;
         box-shadow: 0px 0px 5px #FFF;
+        transform: scale(1.05);
+        transition: 0.3s;
     }
     button.transfer:active, button.topup:active {
         background-color: #FFF;
@@ -341,6 +349,7 @@
     .history-transaction-profiles:hover {
         cursor: pointer;
         transform: translate(3px, -5px);
+        transition: 0.3s;
     } 
     .history-page-link:hover {
         cursor: pointer;
@@ -427,6 +436,7 @@
         box-shadow: 0px 2px 5px #e6e6e7;
         border-radius: 10px;
         background-color: #fdfdfd;
+        transition: 0.3s;
     }
 
 
@@ -489,6 +499,7 @@
         cursor: pointer;
         transform: translate(5px, -5px);
         background-color: #f3f3f5;
+        transition: 0.3s;
     }
     .receivers:active {
         background-color: #FFFFFF;
@@ -590,6 +601,7 @@
         cursor: pointer;
         transform: scale(1.05);
         background-color: #4a64f8;
+        transition: 0.3s;
     }
     .btn-continue:active {
         background-color: #FFFFFF;
