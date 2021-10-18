@@ -34,7 +34,7 @@ body {
     line-height: 40px;
     color: #FFF;
     animation-name: movement;
-    animation-duration: 0.3s;
+    animation-duration: 0.7s;
     animation-iteration-count: 1;
 }
 img.display-app {
@@ -184,9 +184,14 @@ span:hover {
 
 /* simple animation */
 @keyframes movement {
+    0% {margin-left: 0;}
+    10% {margin-left: 10px;}
+    20% {margin-left: 20px;}
     30% {margin-left: 30px;}
+    40% {margin-left: 40px;}
     50% {margin-left: 60px;}
     70% {margin-left: 90px;}
+    80% {margin-left: 100px;}
     90% {margin-left: 120px;}
     100% {margin-left: 150px;}
 }
@@ -194,7 +199,9 @@ span:hover {
     0% {opacity: 0;}
     20% {opacity: 0.2;}
     40% {opacity: 0.4;}
+    50% {opacity: 0.5;}
     60% {opacity: 0.6;}
+    70% {opacity: 0.7;}
     80% {opacity: 0.8;}
     100% {opacity: 1;}
 } 
