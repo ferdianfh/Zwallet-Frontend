@@ -11,10 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
 
 </head>
 <body>
     <main class="main">
+
+        <!-- text logo for mobile version -->
+        <div class="mobile">
+            <h1 class="logo-mobile">Zwallet</h1>
+        </div>
+
         <section class="section-left">
             <h2 class="logo animation-movement">Zwallet</h2>
             <img class="display-app" src="images/mobile.png" alt="Display Apps">
@@ -22,23 +29,32 @@
             <p class="section-left-desc animation-appear">Zwallet is an application that focussing in banking needs for all users in the world. Always updated and always following world trends. 5000+ users registered in Zwallet everyday with worldwide users coverage.</p>       
         </section>
         <section class="section-right animation-appear">
-            <h2 class="section-right-text">Did You Forgot Your Password?
-                Don’t Worry, You Can Reset Your
-                Password In a Minutes.</h2>
+            <h2 class="section-right-text">Did You Forgot Your Password? <br> Don’t Worry, You Can Reset Your <br> Password In a Minutes.</h2>
             <!-- added new description -->
             <p class="section-right-desc">Now you can create a new password for your Zwallet account. Type your password twice so we can confirm your new passsword.</p>
             <!-- new desc end here -->
-            <div class="input-form">
-                <img class="icon" src="images/lock.svg" alt="Password">
-                <input placeholder="Enter your password" type="password" name="password" id="pass">
-                <img class="icon" src="images/eye-crossed.svg" alt="Eye Crossed">
+
+            <!-- text for mobile version -->
+            <div class="section-right-mobile">
+                <h2 class="right-text-mobile">Reset Password</h2>
+                <p class="right-desc-mobile">Create and confirm your new password so <br> you can login to Zwallet.</p>
             </div>
-            <div class="input-form">
-                <img class="icon" src="images/lock.svg" alt="Password">
-                <input placeholder="Enter your password" type="password" name="password" id="pass">
-                <img class="icon" src="images/eye-crossed.svg" alt="Eye Crossed">
-            </div>
-            <button onclick="document.location='login.html'" class="btn">Reset Password</button>
+
+            <form action="" class="form-wrapper">
+                <div class="input-form">
+                    <img class="icon" src="images/lock.svg" alt="Password">
+                    <input placeholder="Create new password" type="password" name="password" id="pass">
+                    <img class="icon" src="images/eye-crossed.svg" alt="Eye Crossed">
+                </div>
+                <div class="input-form">
+                    <img class="icon" src="images/lock.svg" alt="Password">
+                    <input placeholder="Confirm new password" type="password" name="password" id="pass">
+                    <img class="icon" src="images/eye-crossed.svg" alt="Eye Crossed">
+                </div>
+            </form>
+
+            <button onclick="document.location='login.html'" class="btn btn-mobile reset">Reset Password</button>
+
         </section>
     </main>
 </body>

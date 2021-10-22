@@ -11,9 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+
 </head>
 <body>
     <main class="main">
+
+        <!-- text logo for mobile version -->
+        <div class="mobile">
+            <h1 class="logo-mobile">Zwallet</h1>
+        </div>
+
         <section class="section-left">
             <h2 class="logo animation-movement">Zwallet</h2>
             <img class="display-app" src="images/mobile.png" alt="Display Apps">
@@ -27,12 +35,23 @@
                 Password In a Minutes.</h2>
             <p class="section-right-desc">To reset your password, you must type your e-mail and we will send a link to your email and you will be directed to the reset password screens.</p>
             <!-- new text and desc end here -->
-            <div class="input-form">
-                <img class="icon" src="images/mail.svg" alt="Email">
-                <input placeholder="Enter your e-mail" type="email" name="email" id="mail">
+
+            <!-- text for mobile version -->
+            <div class="section-right-mobile">
+                <h2 class="right-text-mobile">Reset Password</h2>
+                <p class="right-desc-mobile">Enter your Zwallet e-mail so we can send <br> you a password reset link.</p>
             </div>
+
+            <form action="" class="form-wrapper">
+                <div class="input-form">
+                    <img class="icon" src="images/mail.svg" alt="Email">
+                    <input placeholder="Enter your e-mail" type="email" name="email" id="mail">
+                </div>
+                
+            </form>
+
             <!-- link on button to reset pass2 -->
-            <button onclick="document.location='reset-pass2.html'" class="btn">Confirm</button>
+            <button onclick="document.location='reset-pass2.html'" class="btn btn-mobile reset one">Confirm</button>
         </section>
     </main>
 </body>

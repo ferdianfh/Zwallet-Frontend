@@ -210,4 +210,11 @@ span:hover {
     70% {opacity: 0.7;}
     80% {opacity: 0.8;}
     100% {opacity: 1;}
-} 
+}
+
+
+/* ===================== styling for mobile version ====================== */
+
+.mobile, .section-right-mobile {
+    display: none;
+}
