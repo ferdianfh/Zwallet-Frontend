@@ -5,7 +5,8 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #FAFCFF;
+    overflow-x: hidden;
     /* background-color: rgba(71, 58, 209, 0.06); */
 }
 
