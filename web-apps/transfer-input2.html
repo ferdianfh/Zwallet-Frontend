@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zwallet | Transfer - Receiver List</title>
+    <title>Zwallet | Transfer - Input Amount Money</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +39,7 @@
                     </div>
                 </a>
                 <!-- link to transfer receiver page -->
-                <a href="transfer-receiver.html" rel="noopener noreferrer">
+                <a href="transfer-receiver.html">
                     <div class="menu-items active-page">
                         <img src="src/icons/arrow-up.svg" alt="Transfer">
                         <p>Transfer</p>
@@ -62,49 +62,38 @@
                 </div>
             </section>
         </section>
-        
         <!-- this is for main content on the right side -->
         <section class="dashboard">
-            <p class="search-receiver-title" >Search Receiver</p>
-            <div class="search-receiver-input">
-                <img class="search-icon" src="src/icons/search.svg" alt="Search">
-                <input class="receiver-input" placeholder="Search receiver here" type="email" name="Transfer Receiver" id="receiver">
-            </div>
-            <!-- link to transfer input page -->
-            <a href="transfer-input.html" rel="noopener noreferrer">
-                <div class="receivers">
-                    <img class="receiver-picture" src="src/pictures/samuel.svg" alt="Samuel" width="52px">
-                    <div class="receiver-detail">
-                        <p class="receiver-name">Samuel Suhi</p>
-                        <p class="receiver-number">+62 813-8492-9994</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="transfer-input2.html">
-                <div class="receivers">
-                    <img class="receiver-picture" src="src/pictures/momo.svg" alt="Momo" width="52px">
-                    <div class="receiver-detail">
-                        <p class="receiver-name">Momo Taro</p>
-                        <p class="receiver-number">+62 812-4343-6731</p>
-                    </div>
-                </div>
-            </a>
+            <p class="money-transfer-title" >Money Transfer</p>
             
             <div class="receivers">
-                <img class="receiver-picture" src="src/pictures/jessica.svg" alt="Jessica" width="52px">
+                <img class="receiver-picture" src="src/pictures/momo.svg" alt="Momo" width="52px">
                 <div class="receiver-detail">
-                    <p class="receiver-name">Jessica Keen</p>
-                    <p class="receiver-number">+62 811-3452-5252</p>
+                    <p class="receiver-name">Momo Taro</p>
+                    <p class="receiver-number">+62 812-4343-6731</p>
                 </div>
             </div>
-            <div class="receivers">
-                <img class="receiver-picture" src="src/pictures/robert.svg" alt="Michael" width="52px">
-                <div class="receiver-detail">
-                    <p class="receiver-name">Michael Le</p>
-                    <p class="receiver-number">+62 810-4224-4613</p>
-                </div>
+            
+            <p class="money-transfer-instruction">
+                Type the amount you want to transfer and then <br> press continue to the next steps.
+            </p>
+            
+            <div class="money-transfer-input">
+                <!-- <div class="rp">Rp</div> -->
+                <input placeholder="0.00" type="text" name="Money Input" id="money" size="10">
             </div>
+
+            <p class="money-transfer-balance">Rp120.000 Available</p>
+
+            <div class="money-transfer-desc">
+                <img class="edit-icon" src="src/icons/edit.svg" alt="Edit">
+                <input class="money-transfer-note" placeholder="Add some notes" type="email" name="Notes" id="note" size="30">
+            </div>
+
+            <div class="continue-button">
+                <button class="btn-continue">Continue</button>
+            </div>
+            
         </section>
     </main>
     <footer class="footer">
