@@ -1,4 +1,11 @@
 /* ======================= styling for all web apps pages ========================= */
+/* styling for mobile */
+.mobile {
+    display: none;
+}
+div.gone {
+    display: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -39,6 +46,35 @@ a {
     background-color: #6379F4;
 }
 
+@keyframes pull-out {
+    0% {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 100%;
+    }
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+.animation-pull-out {
+    animation-name: pull-out;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+.animation-fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.56s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
 
 /* styling for header */
 .nav-logo {

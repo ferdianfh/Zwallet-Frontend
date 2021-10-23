@@ -11,24 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
 
 <body>
-    <header class="nav-bar">
-        <div class="nav-logo">
+    <header class="nav-bar animation-fade-in">
+        <div class="nav-logo big-screen">
             <h2>Zwallet</h2>
         </div>
-        <div class="user-profile">
+        <div class="user-profile mobile">
             <img class="user-profile-pic" src="src/pictures/robert.svg" alt="Robert" width="57">
-            <div class="user-profile-name">
+            <div class="user-profile-name big-screen">
                 <p class="name">Robert Chandler</p>
                 <p class="phone">+62 8139 3877 7946</p>
             </div>
-            <img class="notification" src="src/icons/bell.svg" alt="Bell" width="27">
+            <img class="notification big-screen" src="src/icons/bell.svg" alt="Bell" width="27">
+
+            <!-- header content for mobile veresion -->
+            <div class="saldo mobile">
+                <p class="saldo-text mobile">Balance</p>
+                <p class="saldo-nominal mobile">Rp120.000</p>
+            </div>
+            <img class="notification mobile" src="src/icons/notif-white.svg" alt="Bell" width="27">
         </div>
     </header>
+    
     <main class="main">
         <!-- this is for menu bar on the left side -->
-        <section class="menu-bar">
+        <section class="menu-bar animation-fade-in big-screen">
             <section class="menu-bar-dashboard">
                 <div class="menu-items active-page">
                     <img src="src/icons/grid-grey.svg" alt="Grid">
@@ -59,8 +68,8 @@
             </section>
         </section>
         <!-- this is for main content on the right side -->
-        <section class="menu-content">
-            <section class="balance">
+        <section class="menu-content animation-pull-out">
+            <section class="balance big-screen">
                 <div class="saldo">
                     <p class="saldo-text">Balance</p>
                     <p class="saldo-nominal">Rp120.000</p>
@@ -79,7 +88,7 @@
                 </div>
             </section>
             <section class="history-content">
-                <section class="history-content-chart">
+                <section class="history-content-chart big-screen">
                     <div class="financial">
                         <div class="income">
                             <img src="src/icons/green.svg" alt="Income">
@@ -96,6 +105,20 @@
                         <img src="src/pictures/graphic.png" alt="Graphic">
                     </div>
                 </section>
+                
+                <!-- button for mobile version -->
+                <div class="btn-transaction mobile gone">
+                    <!-- link to transfer receiver page -->
+                    <button onclick="document.location='transfer-receiver.html'" class="transfer mobile">
+                        <img src="src/icons/arrow-blue.svg" alt="Transfer">
+                        <p>Transfer</p>
+                    </button>
+                    <button class="topup mobile">
+                        <img src="src/icons/plus-blue.svg" alt="Top up">
+                        <p>Top Up</p>
+                    </button>
+                </div>
+                
                 <section class="history-content-transaction">
                     <div class="history-transaction-title">
                         <p>Transaction History</p>
@@ -104,7 +127,7 @@
                             <p class="history-page-link">See All</p> 
                         </a>
                     </div>
-                    <div class="history-transaction-profiles">
+                    <div class="history-transaction-profiles mobile">
                         <img src="src/pictures/samuel.svg" alt="Samuel Suhi">
                         <div class="profile-description">
                             <p class="profile-desc-name">Samuel Suhi</p> 
@@ -112,7 +135,18 @@
                         </div>
                         <p class="nominal-transfer">+Rp50.000</p>
                     </div>
-                    <div class="history-transaction-profiles">
+
+                    <!-- transaction history profile for mobile version -->
+                    <div class="history-transaction-profiles mobile gone">
+                        <img class="mobile" src="src/pictures/spotify.png" alt="Spotify">
+                        <div class="profile-description">
+                            <p class="profile-desc-name mobile">Spotify</p> 
+                            <p class="profile-desc mobile">Subscription</p>
+                        </div>
+                        <p class="nominal-subscription mobile">-Rp49.000</p>
+                    </div>
+
+                    <div class="history-transaction-profiles mobile">
                         <img src="src/pictures/netflix.svg" alt="Netflix">
                         <div class="profile-description">
                             <p class="profile-desc-name">Netflix</p> 
@@ -120,7 +154,7 @@
                         </div>
                         <p class="nominal-subscription">-Rp149.000</p>
                     </div>
-                    <div class="history-transaction-profiles">
+                    <div class="history-transaction-profiles big-screen">
                         <img src="src/pictures/christine.svg" alt="Christine Mar">
                         <div class="profile-description">
                             <p class="profile-desc-name">Christine</p> 
@@ -128,7 +162,18 @@
                         </div>
                         <p class="nominal-transfer">+Rp150.000</p>
                     </div>
-                    <div class="history-transaction-profiles">
+
+                    <!-- transaction history profile for mobile version -->
+                    <div class="history-transaction-profiles mobile gone">
+                        <img class="mobile" src="src/pictures/bobi.png" alt="Bobi">
+                        <div class="profile-description">
+                            <p class="profile-desc-name mobile">Bobi Sammy</p> 
+                            <p class="profile-desc mobile">Transfer</p>
+                        </div>
+                        <p class="nominal-transfer mobile">+Rp1.150.000</p>
+                    </div>
+
+                    <div class="history-transaction-profiles big-screen">
                         <img src="src/pictures/adobe.svg" alt="Adobe">
                         <div class="profile-description">
                             <p class="profile-desc-name">Adobe Inc.</p> 
@@ -140,7 +185,7 @@
             </section>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer animation-fade-in big-screen">
         <p class="copyright">2020 Zwallet. All right reserved.</p>
         <div class="contact">
             <p>+62 5637 8882 9901</p>
