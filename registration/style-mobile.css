@@ -76,4 +76,21 @@
     .btn-mobile.reset.one {
         margin-top: 237px;
     }
+    @keyframes pull-out {
+        0% {
+            transform: translate(0, 100px);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0, 0);
+            opacity: 100%;
+        }
+    }
+    .animation-pull-out {
+        animation-name: pull-out;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-direction: alternate;
+    }
 }
