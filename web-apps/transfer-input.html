@@ -11,14 +11,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
 
 </head>
 <body>
     <header class="nav-bar animation-fade-in">
-        <div class="nav-logo">
+
+        <!-- status bars iphone X for mobile version -->
+        <div class="status-bars mobile">
+            <img class="status-bars-time mobile" src="src/icons/timestyle.svg" alt="Time">
+            <img class="status-bars-others mobile" src="src/icons/status-bars.svg" alt="Status Bars">
+        </div>
+
+        <!-- text for mobile version -->
+        <div class="nav-bar-mobile mobile">
+            <a href="transfer-receiver.html">
+                <img class="nav-icon mobile" src="src/icons/arrow-left.svg" alt="Back">
+            </a>
+            <p class="nav-title mobile">Transfer</p>
+        </div>
+
+        <!-- receiver for mobile version -->
+        <div class="receivers mobile chosen gone">
+            <img class="receiver-picture" src="src/pictures/samuel.svg" alt="Samuel" width="52px">
+            <div class="receiver-detail">
+                <p class="receiver-name">Samuel Suhi</p>
+                <p class="receiver-number">+62 813-8492-9994</p>
+            </div>
+        </div>
+
+        <div class="nav-logo big-screen">
             <h2>Zwallet</h2>
         </div>
-        <div class="user-profile">
+        <div class="user-profile big-screen">
             <img class="user-profile-pic" src="src/pictures/robert.svg" alt="Robert" width="57">
             <div class="user-profile-name">
                 <p class="name">Robert Chandler</p>
@@ -30,7 +55,7 @@
 
     <main class="main">
         <!-- this is for menu bar on the left side -->
-        <section class="menu-bar animation-fade-in">
+        <section class="menu-bar animation-fade-in big-screen">
             <section class="menu-bar-dashboard">
                 <!-- link to home page -->
                 <a href="home.html" rel="noopener noreferrer">
@@ -63,11 +88,12 @@
                 </div>
             </section>
         </section>
+
         <!-- this is for main content on the right side -->
         <section class="dashboard animation-pull-out">
-            <p class="money-transfer-title" >Money Transfer</p>
+            <p class="money-transfer-title big-screen" >Money Transfer</p>
             
-            <div class="receivers">
+            <div class="receivers big-screen">
                 <img class="receiver-picture" src="src/pictures/samuel.svg" alt="Samuel" width="52px">
                 <div class="receiver-detail">
                     <p class="receiver-name">Samuel Suhi</p>
@@ -75,12 +101,11 @@
                 </div>
             </div>
             
-            <p class="money-transfer-instruction">
+            <p class="money-transfer-instruction big-screen">
                 Type the amount you want to transfer and then <br> press continue to the next steps.
             </p>
             
             <div class="money-transfer-input">
-                <!-- <div class="rp">Rp</div> -->
                 <input placeholder="0.00" type="text" name="Money Input" id="money" size="10">
             </div>
 
@@ -98,7 +123,7 @@
         </section>
     </main>
 
-    <footer class="footer animation-fade-in">
+    <footer class="footer animation-fade-in big-screen">
         <p class="copyright">2020 Zwallet. All right reserved.</p>
         <div class="contact">
             <p>+62 5637 8882 9901</p>

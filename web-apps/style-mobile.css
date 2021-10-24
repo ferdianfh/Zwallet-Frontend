@@ -4,6 +4,7 @@
         height: 100%;
         font-family: 'Nunito Sans';
         background-color: #FAFCFF;
+        /* overflow: scroll; */
     }
     .mobile, section.mobile {
         display: block;
@@ -172,7 +173,7 @@
         transition: 0.3s;
     }
 
-    /*  ======================== transaction history page ========================== */
+    /*  ======================== transfer receiver page ========================== */
     .search-receiver-input.mobile {
         display: flex;
         flex-direction: row;
@@ -207,5 +208,45 @@
         display: flex;
         flex-direction: row;
     }
+
+    /*  ======================== transfer input page ========================== */
+    .receivers.chosen {
+        margin-top: 20px;
+        padding: 12px 5px;
+    }
+    .money-transfer-input input {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 56px;
+        text-align: center;
+    }
+    ::placeholder {
+        color: #B5BDCC;
+    }
+    .money-transfer-balance {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #7C7895;
+        margin-top: 30px;
+    }
+    .money-transfer-desc {
+        margin-top: 60px;
+    }
+    .money-transfer-note {
+        width: 94%;
+    }
+    .continue-button {
+        justify-content: center;
+        align-items: center;
+        justify-self: flex-end;
+        margin-top: 210px;
+    }
+    .btn-continue {
+        margin: 0;
+        width: 90%;
+    }
+
 
 }
