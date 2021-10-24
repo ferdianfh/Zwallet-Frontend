@@ -4,7 +4,7 @@
         height: 100%;
         font-family: 'Nunito Sans';
         background-color: #FAFCFF;
-        /* overflow: scroll; */
+        overflow: auto;
     }
     .mobile, section.mobile {
         display: block;
@@ -290,6 +290,7 @@
     .details {
         margin: 0;
         margin-top: 20px;
+        overflow: visible;
     }
     .details-content.mobile {
         display: inline-flex;
@@ -310,6 +311,20 @@
     }
     .details-content.time {
         padding: 15px 80px 15px 17px;
+    }
+
+    /*  ======================== transfer confirmation page ========================== */
+    .nav-title.status {
+        margin-left: 92px;
+    }
+    .success-receiver.mobile {
+        display: flex;
+        flex-direction: row;
+        background-color: #FFFFFF;
+        margin: 15px;
+    }
+    .transfer-to.mobile {
+        margin-left: 15px;
     }
 
 

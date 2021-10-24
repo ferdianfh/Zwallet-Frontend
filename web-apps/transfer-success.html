@@ -25,19 +25,7 @@
 
         <!-- text for mobile version -->
         <div class="nav-bar-mobile mobile">
-            <a href="transfer-receiver.html">
-                <img class="nav-icon mobile" src="src/icons/arrow-left.svg" alt="Back">
-            </a>
-            <p class="nav-title mobile">Transfer</p>
-        </div>
-
-        <!-- receiver for mobile version -->
-        <div class="receivers mobile chosen gone">
-            <img class="receiver-picture" src="src/pictures/samuel.svg" alt="Samuel" width="52px">
-            <div class="receiver-detail">
-                <p class="receiver-name">Samuel Suhi</p>
-                <p class="receiver-number">+62 813-8492-9994</p>
-            </div>
+            <p class="nav-title mobile status">Transfer Details</p>
         </div>
 
         <div class="nav-logo big-screen">
@@ -97,28 +85,52 @@
                 <p class="details-title success-title">Transfer Success</p>
             </div>
             
-            <section class="details">
+            <section class="details mobile">
 
-                <div class="details-content">
+                <div class="details-content mobile amount">
                     <p class="details-content-text">Amount</p>
                     <p class="details-content-value">Rp100.000</p>
                 </div>
-                <div class="details-content">
+                <div class="details-content mobile balance-left">
                     <p class="details-content-text">Balance Left</p>
                     <p class="details-content-value">Rp20.000</p>
                 </div>
-                <div class="details-content">
+
+                <!-- date and time for mobile version -->
+                <div class="details-content mobile date gone">
+                    <p class="details-content-text">Date</p>
+                    <p class="details-content-value">May 11, 2020</p>
+                </div>
+                <div class="details-content mobile time gone">
+                    <p class="details-content-text">Time</p>
+                    <p class="details-content-value">12.20</p>
+                </div>
+                <!-- date and time mobile version end here -->
+
+                <div class="details-content big-screen">
                     <p class="details-content-text">Date & Time</p>
                     <p class="details-content-value">May 11, 2020 - 12.20</p>
                 </div>
-                <div class="details-content">
+
+                <div class="details-content mobile notes">
                     <p class="details-content-text">Notes</p>
                     <p class="details-content-value">For buying some socks</p>
                 </div>
 
-                <p class="transfer-to" >Transfer to</p>
+                <!-- mobile version stuff -->
+                <p class="transfer-to mobile" >From</p>
+
+                <div class="success-receiver mobile">
+                    <img class="receiver-picture" src="src/pictures/robert.svg" alt="Robert" width="52px">
+                    <div class="receiver-detail">
+                        <p class="receiver-name">Robert Chandler</p>
+                        <p class="receiver-number">+62 813-9387-7946</p>
+                    </div>
+                </div>
+
+                <p class="transfer-to mobile" >To</p>
                 
-                <div class="success-receiver">
+                <div class="success-receiver mobile">
                     <img class="receiver-picture" src="src/pictures/samuel.svg" alt="Samuel" width="52px">
                     <div class="receiver-detail">
                         <p class="receiver-name">Samuel Suhi</p>
@@ -127,15 +139,19 @@
                 </div>
             </section>
 
-            <div class="status-button">
-                <button onclick="document.location='transfer-failed.html'" class="btn-status share">
+            <div class="status-button big-screen">
+                <button onclick="document.location='transfer-failed.html'" class="btn-status share big-screen">
                     <img src="src/icons/share.svg" alt="Share">
                 </button>
-                <button class="btn-status download">
+                <button class="btn-status download big-screen">
                     <img src="src/icons/download.svg" alt="" class="download">
                     <p class="pdf" >Download PDF</p>
                 </button>
                 <button onclick="document.location='home.html'" class="btn-status back-home">Back to Home</button>
+            </div>
+
+            <div class="continue-button">
+                <button onclick="document.location='home.html'" class="btn-continue confirm">Back to Home</button>
             </div>
             
         </section>
