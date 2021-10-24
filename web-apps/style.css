@@ -3,7 +3,7 @@
 .mobile {
     display: none;
 }
-div.gone {
+div.gone, section.gone {
     display: none;
 }
 * {
