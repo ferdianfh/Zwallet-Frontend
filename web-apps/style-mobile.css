@@ -171,4 +171,41 @@
         color: #FFFFFF;
         transition: 0.3s;
     }
+
+    /*  ======================== transaction history page ========================== */
+    .search-receiver-input.mobile {
+        display: flex;
+        flex-direction: row;
+        background-color: #FFFFFF;
+        margin: 10px 0px 10px 0px;
+    }
+    .receiver-input.mobile {
+        background-color: #FFFFFF;
+    }
+    .contacts-title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #514F5B;
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+    .contacts-info {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #8F8F8F;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .receivers {
+        margin: 7px 5px 7px 5px;
+        padding: 5px 5px 1px 5px;
+    }
+    .receivers.mobile {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
