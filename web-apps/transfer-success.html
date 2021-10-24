@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwallet | Transfer Status: Success</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+
+</head>
+<body>
+    <header class="nav-bar animation-fade-in">
+
+        <!-- status bars iphone X for mobile version -->
+        <div class="status-bars mobile">
+            <img class="status-bars-time mobile" src="src/icons/timestyle.svg" alt="Time">
+            <img class="status-bars-others mobile" src="src/icons/status-bars.svg" alt="Status Bars">
+        </div>
+
+        <!-- text for mobile version -->
+        <div class="nav-bar-mobile mobile">
+            <a href="transfer-receiver.html">
+                <img class="nav-icon mobile" src="src/icons/arrow-left.svg" alt="Back">
+            </a>
+            <p class="nav-title mobile">Transfer</p>
+        </div>
+
+        <!-- receiver for mobile version -->
+        <div class="receivers mobile chosen gone">
+            <img class="receiver-picture" src="src/pictures/samuel.svg" alt="Samuel" width="52px">
+            <div class="receiver-detail">
+                <p class="receiver-name">Samuel Suhi</p>
+                <p class="receiver-number">+62 813-8492-9994</p>
+            </div>
+        </div>
+
+        <div class="nav-logo big-screen">
+            <h2>Zwallet</h2>
+        </div>
+        <div class="user-profile big-screen">
+            <img class="user-profile-pic" src="src/pictures/robert.svg" alt="Robert" width="57">
+            <div class="user-profile-name">
+                <p class="name">Robert Chandler</p>
+                <p class="phone">+62 8139 3877 7946</p>
+            </div>
+            <img class="notification" src="src/icons/bell.svg" alt="Bell" width="27">
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- this is for menu bar on the left side -->
+        <section class="menu-bar animation-fade-in big-screen">
+            <section class="menu-bar-dashboard">
+                <!-- link to home page -->
+                <a href="home.html" rel="noopener noreferrer">
+                    <div class="menu-items">
+                        <img src="src/icons/grid-grey.svg" alt="Grid">
+                        <p>Dashboard</p>
+                    </div>
+                </a>
+                <!-- link to transfer receiver page -->
+                <a href="transfer-receiver.html">
+                    <div class="menu-items active-page">
+                        <img src="src/icons/arrow-up.svg" alt="Transfer">
+                        <p>Transfer</p>
+                    </div>
+                </a>
+                
+                <div class="menu-items">
+                    <img src="src/icons/plus.svg" alt="Top Up">
+                    <p>Top Up</p>
+                </div>
+                <div class="menu-items">
+                    <img src="src/icons/user.svg" alt="Profile">
+                    <p>Profile</p>
+                </div>
+            </section>
+            <section class="menu-bar-logout">
+                <div class="menu-items">
+                    <img src="src/icons/log-out.svg" alt="Log Out">
+                    <p>Log Out</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- this is for main content on the right side -->
+        <section class="dashboard animation-pull-out">
+
+            <div class="transfer-status">
+                <img src="src/icons/success.svg" alt="Success" class="status-succes">
+                <p class="details-title success-title">Transfer Success</p>
+            </div>
+            
+            <section class="details">
+
+                <div class="details-content">
+                    <p class="details-content-text">Amount</p>
+                    <p class="details-content-value">Rp100.000</p>
+                </div>
+                <div class="details-content">
+                    <p class="details-content-text">Balance Left</p>
+                    <p class="details-content-value">Rp20.000</p>
+                </div>
+                <div class="details-content">
+                    <p class="details-content-text">Date & Time</p>
+                    <p class="details-content-value">May 11, 2020 - 12.20</p>
+                </div>
+                <div class="details-content">
+                    <p class="details-content-text">Notes</p>
+                    <p class="details-content-value">For buying some socks</p>
+                </div>
+
+                <p class="transfer-to" >Transfer to</p>
+                
+                <div class="success-receiver">
+                    <img class="receiver-picture" src="src/pictures/samuel.svg" alt="Samuel" width="52px">
+                    <div class="receiver-detail">
+                        <p class="receiver-name">Samuel Suhi</p>
+                        <p class="receiver-number">+62 813-8492-9994</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="status-button">
+                <button onclick="document.location='transfer-failed.html'" class="btn-status share">
+                    <img src="src/icons/share.svg" alt="Share">
+                </button>
+                <button class="btn-status download">
+                    <img src="src/icons/download.svg" alt="" class="download">
+                    <p class="pdf" >Download PDF</p>
+                </button>
+                <button onclick="document.location='home.html'" class="btn-status back-home">Back to Home</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer animation-fade-in big-screen">
+        <p class="copyright">2020 Zwallet. All right reserved.</p>
+        <div class="contact">
+            <p>+62 5637 8882 9901</p>
+            <p>contact@zwallet.com</p> 
+        </div>
+    </footer>
+</body>
+</html>
