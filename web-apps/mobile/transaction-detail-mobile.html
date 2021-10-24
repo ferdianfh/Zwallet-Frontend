@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwallet | Transaction Details</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-mobile.css">
+    
+</head>
+<body>
+    <header class="nav-bar animation-fade-in">
+
+        <!-- status bars iphone X for mobile version -->
+        <div class="status-bars mobile">
+            <img class="status-bars-time mobile" src="../src/icons/timestyle.svg" alt="Time">
+            <img class="status-bars-others mobile" src="../src/icons/status-bars.svg" alt="Status Bars">
+        </div>
+
+        <!-- text for mobile version -->
+        <div class="nav-bar-mobile mobile">
+            <a href="../home.html">
+                <img class="nav-icon mobile" src="../src/icons/arrow-left.svg" alt="Back">
+            </a>
+            <p class="nav-title mobile">Transaction</p>
+        </div>
+
+        <div class="financial mobile">
+            <div class="income mobile">
+                <img src="../src/icons/green.svg" alt="Income">
+                <div class="income-text mobile">
+                    <p class="financial-text mobile">Income</p>
+                    <p class="financial-cash mobile" >Rp2.120.000</p>
+                </div>
+            </div>
+            <div class="expense mobile">
+                <img src="../src/icons/red.svg" alt="Expense">
+                <div class="expense-text mobile">
+                    <p class="financial-text mobile" >Expense</p>
+                    <p class="financial-cash mobile">Rp1.560.000</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <!-- this is for main content on the right side -->
+        <section class="dashboard animation-pull-out transaction-detail-mobile">
+
+            <p class="weekly-title">In This Week</p>
+
+            <div class="chart mobile">
+                <img src="src/graphic.png" alt="chart">
+            </div>
+
+            <div class="history-transaction-title">
+                <p>Transaction History</p>
+                <!-- link to transaction history page -->
+                <a href="../history.html" rel="noopener noreferrer"> 
+                    <p class="history-page-link">See All</p> 
+                </a>
+            </div>
+
+            <div class="history-transaction-profiles mobile">
+                <img src="../src/pictures/samuel.svg" alt="Samuel Suhi">
+                <div class="profile-description">
+                    <p class="profile-desc-name">Samuel Suhi</p> 
+                    <p class="profile-desc">Transfer</p>
+                </div>
+                <p class="nominal-transfer">+Rp50.000</p>
+            </div>
+            
+            <div class="history-transaction-profiles mobile">
+                <img src="../src/pictures/spotify.png" alt="Spotify">
+                <div class="profile-description">
+                    <p class="profile-desc-name">Spotify</p> 
+                    <p class="profile-desc">Subscription</p>
+                </div>
+                <p class="nominal-subscription">-Rp49.000</p>
+            </div>
+            
+            <div class="history-transaction-profiles mobile">
+                <img src="../src/pictures/netflix.svg" alt="Netflix">
+                <div class="profile-description">
+                    <p class="profile-desc-name">Netflix</p> 
+                    <p class="profile-desc">Subscription</p>
+                </div>
+                <p class="nominal-subscription">-Rp149.000</p>
+            </div>
+            
+            <div class="history-transaction-profiles mobile">
+                <img src="../src/pictures/bobi.png" alt="Bobi">
+                <div class="profile-description">
+                    <p class="profile-desc-name">Bobi Sammy</p> 
+                    <p class="profile-desc">Transfer</p>
+                </div>
+                <p class="nominal-transfer">+Rp1.150.000</p>
+            </div>
+
+            <div class="history-transaction-profiles mobile">
+                <img src="../src/pictures/momo.svg" alt="momo">
+                <div class="profile-description">
+                    <p class="profile-desc-name">Momo Taro</p> 
+                    <p class="profile-desc">Transfer</p>
+                </div>
+                <p class="nominal-subscription">-Rp200.000</p>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
