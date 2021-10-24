@@ -15,6 +15,9 @@
     button {
         border: 0;
     }
+    a {
+        text-decoration: none;
+    }
     /* styling for header */
     .nav-bar {
         display: flex;
@@ -241,11 +244,72 @@
         justify-content: center;
         align-items: center;
         justify-self: flex-end;
-        margin-top: 210px;
+        margin-top: 180px;
     }
     .btn-continue {
         margin: 0;
         width: 90%;
+    }
+
+    /*  ======================== transaction details page ========================== */
+    .dashboard.transaction-detail-mobile {
+        overflow: auto;
+    }
+    .financial.mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .financial-text.mobile {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #D0D0D0;
+    }
+    .financial-cash.mobile, .weekly-title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #F1F1F1;
+    }
+    .weekly-title {
+        color: #514F5B;
+        margin: 20px 5px 20px 15px;
+    }
+    .chart.mobile {
+        margin: 10px;
+    }
+    .income.mobile, .expense.mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 15px;
+    }
+
+    /*  ======================== transfer confirmation page ========================== */
+    .details {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .details-content.mobile {
+        display: inline-flex;
+        margin: 15px;
+        padding: 20px;
+    }
+    .details-content.notes {
+        padding: 16px 124px 14px 35px;
+    }
+    .details-content.amount {
+        padding: 15px 50px 15px 17px;
+    }
+    .details-content.balance-left {
+        padding: 15px 50px 15px 17px;
+    }
+    .details-content.date {
+        padding: 15px 34px 15px 17px;
+    }
+    .details-content.time {
+        padding: 15px 80px 15px 17px;
     }
 
 
