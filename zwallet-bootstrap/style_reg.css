@@ -37,7 +37,10 @@
         right: 1em !important;
     }
     .btn-login {
-        margin-top: 6.5em !important;
+        margin-top: 6.5em;
+    }
+    .create {
+        margin-bottom: 1.9em;
     }
 
     /* simple animation */
@@ -57,6 +60,15 @@
         animation-iteration-count: 1;
         animation-timing-function: ease-out;
         animation-direction: alternate;
+    }
+
+    /* styling for reset password page */
+    .confirm-email {
+        margin-top: 7em !important;
+    }
+    .btn-confirm {
+        margin-top: 11.5em !important;
+        margin-bottom: 2em !important;
     }
 }
 
@@ -151,7 +163,7 @@ img.display-app {
     background-color: #DADADA;
     color: #88888F;
     padding: 0.6em;
-    margin-top: 5em !important;
+    margin-top: 5em;
 }
 .bi-eye-slash {
     right: 3em;
