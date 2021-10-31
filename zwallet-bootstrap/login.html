@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwallet | Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style_reg.css">
+</head>
+<body>
+    <main class="container-fluid d-flex">
+        <section class="row col-xl-8 left-section d-flex flex-column d-none d-xl-block">
+            <h2 class="col-xl-12 logo-desktop text-white animation-appear animation-movement">Zwallet</h2>
+            <img src="../registration/images/mobile.png" alt="Display App" class="col-xl-12 display-app animation-appear">
+            <h2 class="section-left-text text-white registration-text animation-appear">App that Covering Banking Needs.</h2>
+            <p class="section-left-desc text-white registration-desc animation-appear">Zwallet is an application that focussing in banking needs for all users in the <br> world. Always updated and always following world trends. 5000+ users <br> registered in Zwallet everyday with worldwide users coverage.</p>
+        </section>
+        
+        <section class="row col-xl-4 right-section animation-appear ">
+            <div class="col-md-12 col-xl-12">
+                <h2 class="section-right-text d-none d-md-block registration-text">Start Accessing Banking Needs <br> With All Devices and All Platforms With 30.000+ Users.</h2>
+                <p class="section-right-desc d-none d-md-block registration-desc">Transfering money is eassier than ever, you can access Zwallet wherever you are. Desktop, laptop, mobile phone? We cover all of that for you!</p>
+            </div>
+
+            <!-- layout mobile version -->
+            <div class="col-12 right-section-header d-md-none">
+                <h1 class="logo text-blue text-center">Zwallet</h1>
+            </div>
+
+            <div class="col-12 right-section-content text-center animation-pull-out">
+                <h2 class="login-title d-md-none">Login</h2>
+                <p class="login-desc d-md-none">Login to your existing account to access <br> all the features in Zwallet.</p>
+                <!-- input form start here-->
+                <div class="input-form d-flex mt-5 ">
+                    <i class="bi-envelope position-absolute " style="font-size: 1.3em"></i>
+                    <input placeholder="Enter your e-mail" type="email" name="email" id="mail">
+                </div>
+                <div class="input-form d-flex mt-5">
+                    <i class="bi-lock position-absolute" style="font-size: 1.3em" ></i>
+                    <input placeholder="Enter your password" type="password" name="email" id="mail">
+                    <i class="bi-eye-slash position-absolute " style="font-size: 1.3em"></i>
+                </div>
+                <p class="forgot text-right mt-2 me-2">Forgot Password?</p>
+                <button class="btn btn-login mb-1" type="submit">Login</button>
+                <!-- input form end here -->
+                <p class="create mt-5 ">Don't have an account? Let's <span class="create-account text-blue">Sign Up</span> </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
