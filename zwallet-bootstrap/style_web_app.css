@@ -1,0 +1,387 @@
+/* global styling */
+body {
+    background-color: #FAFCFF;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.text-blue {
+    color: #6379F4;
+}
+.text-white {
+    color: #FFFFFF;
+}
+button {
+    border: 0;
+    outline: 0;
+    width: 100%;
+}
+[class^="col"] {
+    padding: 0.4em;
+    margin-bottom: 0.5em;
+}
+.header-content {
+    background-color: #6379F4;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+/* styling default mobile version */
+.saldo {
+    margin-left: -6em;
+}
+.saldo-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D0D0D0;
+}
+.saldo-nominal {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+button.transfer-default, button.topup-default {
+    background: #EAEDFF;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #514F5B;
+}
+.history-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+}
+.history-transaction-profiles {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+.profile-desc-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4D4B57;
+}
+.profile-desc {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7A7886;
+}
+.nominal-transfer {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1EC15F;
+}
+.nominal-subscription {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF5B37;
+}
+
+.nav-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.weekly, .monthly {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7A7886;
+}
+button.expense, button.income, button.calendar {
+    background-color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #6379F4;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (min-width: 768px) {
+    .header-content {
+        background-color: #FFFFFF;
+    }
+    h2.logo {
+        font-weight: bold;
+        font-size: 1.75em;
+        line-height: 30px;
+        margin-left: 4em;
+    }
+    .user-profile {
+        margin-right: 6.5em;
+    }
+    .user-profile-name .name {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 31px;
+        color: #3A3D42;
+    }
+    .user-profile-name .phone {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 24px;
+        color: rgba(58, 61, 66, 0.9);
+    }
+    .user-profile-name:hover, .user-pic:hover {
+        cursor: pointer;
+    }
+    .notif:hover {
+        cursor: pointer;
+        color: #6379F4;
+    }
+    .menu-bar {
+        margin-left: 6em;
+        margin-right: 1.5em;
+        background-color: #FFF;
+        border-radius: 25px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    .menu-items {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 31px;
+        color: rgba(58, 61, 66, 0.8);
+        border-left: 3px solid transparent;
+    }
+    .menu-items:hover {
+        cursor: pointer;
+        border-left: 3px solid #6379F4;
+        color: #6379F4 !important;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .content-bar {
+        margin-right: 6em;
+    }
+    .footer-content {
+        background-color: #6379F4;
+    }
+    .footer-content p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 15px;
+        color: #EFEFEF;
+        margin-bottom: 0;
+        padding: 0.75em;
+    }
+    .copyright {
+        margin-left: 6em;
+    }
+    .contact {
+        margin-right: 6em;
+    }
+    .contact p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #FFF;
+    }
+    
+    
+    .content-bar {
+        background-color: #FFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 25px;
+    }
+    .profile-description.history-page {
+        margin-left: -20em !important;
+    }
+    .history-transaction-profiles:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: 0.3s;
+    }
+
+    /* styling for balance part */
+    .balance {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        border-radius: 25px;
+        background-color: #6379F4;
+        justify-content: space-between;
+    }
+    .saldo {
+        margin: 15px 0px 0px 30px;
+    }
+    .saldo p {
+        margin: 10px 0px 15px 0px;
+    }
+    .saldo-text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #E0E0E0;
+    }
+    .saldo-nominal {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .saldo-contact {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #DFDCDC;
+    }
+    .btn-transaction {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 67px 10px 10px;
+    }
+    button.transfer, button.topup {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        padding: 0px 10px 0px 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 0;
+        border: 0.5px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    button.transfer p, button.topup p {
+        margin: 13px 16px 13px 14px;
+    }
+    button.transfer img, button.topup img {
+        margin: 8px 5px 5px 10px;
+    }
+    button.transfer:hover, button.topup:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 5px #FFF;
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+    button.transfer:active, button.topup:active {
+        background-color: #FFF;
+        color: #4c65f5;
+    }
+
+    /* styling for history transaction part */
+        /* styling history charts and so on */
+        .history-content {
+            display: flex;
+            flex-direction: row;
+            flex: 2.5;
+        }
+        .history-content-chart {
+            border-radius: 25px;
+            background-color: #FFF;
+            margin: 10px 5px 0px 0px;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .financial {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .income {
+            margin: 10px 0px 0px 30px;
+        }
+        .expense {
+            margin: 10px 30px 0px 0px;
+        }
+        .income .financial-text, .expense .financial-text {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6A6A6A;
+        }
+        .income .financial-cash, .expense .financial-cash {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            color: #3A3D42;
+        } 
+        .graphic {
+            display: flex;
+            flex: 1;
+            margin: 0px 0px -30px 0px;
+        }
+        .graphic img {
+            width: 290px;
+            height: 200px;
+            transform: translate(80px, -42px);
+        }
+        /* styling history transaction section */
+        .history-content-transaction {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            border-radius: 25px;
+            background-color: #FFF;
+            margin: 10px 0px 0px 5px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .history-transaction-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            color: #3A3D42;
+            margin: 10px;
+        }
+        .history-page-link {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            color: #6379F4;
+        }
+        .history-transaction-profiles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+        .profile-description {
+            display: flex;
+            flex-direction: column;
+        }
+        .profile-description p {
+            margin: 5px 5px 0px -29px;
+        }
+        .profile-desc-name {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #4D4B57;
+        }
+        .profile-desc {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #7A7886;
+        }
+        /* styling cool effects on history transaction */
+        .history-transaction-profiles:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: 0.3s;
+        } 
+        .history-page-link:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+    
+
+    
+}
