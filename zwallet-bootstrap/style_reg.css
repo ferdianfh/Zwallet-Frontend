@@ -83,6 +83,11 @@ body {
 .text-white {
     color: #FFFFFF;
 }
+button {
+    border: 0;
+    outline: 0;
+    width: 100%;
+}
 .registration-text {
     font-weight: bold;
     font-size: 24px;
@@ -105,11 +110,7 @@ input {
     padding-bottom: 0.6em;
     background-color: transparent;
 }
-button {
-    border: 0;
-    outline: 0;
-    width: 100%;
-}
+
 
 /* styling for login page */
 .left-section {
@@ -181,7 +182,7 @@ img.display-app {
 input:focus {
     border-bottom: 2px solid #324ef0;
 }
-.input-form:hover i {
+.input-form:active i {
     color: #6379F4;
 }
 .create {
