@@ -91,6 +91,7 @@ input {
     line-height: 23px;
     padding-left: 2.5em !important;
     padding-bottom: 0.6em;
+    background-color: transparent;
 }
 button {
     border: 0;
