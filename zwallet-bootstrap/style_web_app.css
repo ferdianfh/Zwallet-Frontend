@@ -108,6 +108,36 @@ button.expense, button.income, button.calendar {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+@keyframes pull-out {
+    0% {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 100%;
+    }
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+.animation-pull-out {
+    animation-name: pull-out;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+.animation-fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.56s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+
 @media screen and (min-width: 768px) {
     .active-page {
         border-left: 3px solid #6379F4 !important;

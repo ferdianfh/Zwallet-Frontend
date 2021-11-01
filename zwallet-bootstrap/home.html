@@ -19,7 +19,7 @@
 <body>
     <div class="container-fluid">
         <div class="row d-flex">
-            <header class="col-12 header-content d-flex flex-column">
+            <header class="col-12 header-content d-flex flex-column animation-fade-in">
                 <!-- status bar xs, sm, md version -->
                 <div class="status-bars d-flex justify-content-between mb-3 d-lg-none">
                     <img src="../web-apps/src/icons/timestyle.svg" alt="Time" >
@@ -50,7 +50,7 @@
 
             <main class="col-12 main-content">
                 <!-- button for xs, sm, md version -->
-                <div class="btn btn-transaction d-flex flex-row mt-3 d-lg-none">
+                <div class="btn btn-transaction d-flex flex-row mt-3 d-lg-none animation-pull-out">
                     <button class="transfer-default d-flex flex-row justify-content-evenly align-items-center m-1">
                         <i class="bi-arrow-up" style="color: #6379F4; font-size: 1.7em;"></i>
                         <p class="mt-3">Transfer</p>
@@ -62,7 +62,7 @@
                 </div>
 
                 <!-- main content for xs, sm, md -->
-                <div class="small-screen-content d-lg-none">
+                <div class="small-screen-content d-lg-none animation-pull-out">
                     <div class="transaction-history-title d-flex flex-row justify-content-between mt-4 mb-3">
                         <p class="history-title">Transaction History</p>
                         <a href="history.html">
@@ -106,7 +106,7 @@
                 
                 <!-- main content for lg, xl, xxl -->
                 <div class="big-screen-content d-none d-lg-block d-lg-flex mt-lg-2">
-                    <aside class="menu-bar col-lg-2 d-lg-flex flex-column ">
+                    <aside class="menu-bar col-lg-2 d-lg-flex flex-column animation-fade-in">
                         <section class="menu-bar-nav d-lg-flex flex-column mb-5 mt-2">
                             <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0 active-page">
                                 <i class="bi-grid ms-4" style="font-size: 1.7em;"></i>
@@ -135,7 +135,7 @@
                         </section>
                     </aside>
 
-                    <section class="content-bar col-lg-8 ">
+                    <section class="content-bar col-lg-8 animation-pull-out ">
                         <section class="menu-content animation-pull-out">
                             <section class="balance big-screen">
                                 <div class="saldo">
@@ -223,7 +223,7 @@
                 
             </main>
 
-            <footer class="col-md-12 footer-content d-none d-md-block d-md-flex flex-row justify-content-between mb-0">
+            <footer class="col-md-12 footer-content d-none d-md-block d-md-flex flex-row justify-content-between mb-0 animation-fade-in">
                 <p class="copyright">2020 Zwallet. All right reserved.</p>
                 <div class="contact d-md-flex flex-row">
                     <p>+62 5637 8882 9901</p>
