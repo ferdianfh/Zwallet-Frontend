@@ -119,7 +119,7 @@ input {
 .left-section {
     height: 100%;
     background-color: #6379F4;
-    background: url(src/bglogin.svg) no-repeat;
+    background: url(../src/bglogin.svg) no-repeat;
     background-size: auto;
 }
 .logo-desktop {
