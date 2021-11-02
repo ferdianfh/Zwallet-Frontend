@@ -9,6 +9,15 @@ body {
 .text-white {
     color: #FFFFFF;
 }
+.text-green {
+    color: #1EC15F;
+}
+.text-red {
+    color: #FF5B37; 
+}
+.icons-size {
+    font-size: 1.7em;
+}
 button, input {
     border: 0;
     outline: 0;
