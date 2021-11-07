@@ -30,12 +30,14 @@ Pages you need to know:
 
 - **Home**, you could navigate to any pages you want to go.
 - **Transaction History**, you could check your transaction history from _incomes_ to _expenses_, from _weekly_ to _monthly_.
+- **Transfer Receiver**, you could share happiness by send them some _bills_ from this page, it will show your list of contacts.
+- **Transfer Input**, input amount _bills_ you want to transfer.
+- **Transfer Confirmation**, check and confirm your details.
+- **Transfer Status**, it will show you either your transaction is _success_ or _failed_.
 
 ## Zwallet Update!
 
-Hello! **Zwallet** is currently on development progress. We are trying to make the best Application for you!
-
-You could still download the latest version here:
+**Zwallet** is now available here:
 
 - [Google Play](https://play.google.com/)
 - [App Store](https://www.apple.com/)
