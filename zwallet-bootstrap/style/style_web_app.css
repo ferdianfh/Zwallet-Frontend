@@ -540,3 +540,12 @@ button.expense, button.income, button.calendar {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
+
+/* ================== TRANSFER STATUS PAGE ==================== */
+
+.btn-share {
+    font-weight: bold;
+    background: rgba(99, 121, 244, 0.15);
+    border-radius: 12px;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05) ;
+}
