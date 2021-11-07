@@ -520,3 +520,23 @@ button.expense, button.income, button.calendar {
     color: #6379F4 !important;
     transition: 0.3s;
 }
+
+
+/* ================== TRANSFER CONFIRMATION PAGE ==================== */
+.text-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7A7886;
+}
+.text-content {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #514F5B;
+}
+.confirm-items {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
