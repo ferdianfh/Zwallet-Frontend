@@ -56,7 +56,7 @@
             <main class="col-12 main-content">
                 <!-- button for xs, sm, md version -->
                 <div class="btn btn-transaction d-flex flex-row mt-3 d-lg-none animation-pull-out">
-                    <button class="transfer-default d-flex flex-row justify-content-evenly align-items-center m-1">
+                    <button onclick="document.location='transfer_receiver.html'" class="transfer-default d-flex flex-row justify-content-evenly align-items-center m-1">
                         <i class="bi-arrow-up text-blue icons-size"></i>
                         <p class="mt-3">Transfer</p>
                     </button>
@@ -117,10 +117,12 @@
                                 <i class="bi-grid ms-4 icons-size"></i>
                                 <p class="ms-4 mt-3">Dashboard</p>
                             </div>
-                            <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
-                                <i class="bi-arrow-up ms-4 icons-size"></i>
-                                <p class="ms-4 mt-3">Transfer</p>
-                            </div>
+                            <a href="transfer_receiver.html">
+                                <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
+                                    <i class="bi-arrow-up ms-4 icons-size"></i>
+                                    <p class="ms-4 mt-3">Transfer</p>
+                                </div>
+                            </a>
                             <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
                                 <i class="bi-plus-lg ms-4 icons-size"></i>
                                 <p class="ms-4 mt-3">Top Up</p>
@@ -150,7 +152,7 @@
                                 </div>
                                 <div class="btn-transaction">
                                     <!-- link to transfer receiver page -->
-                                    <button class="transfer align-items-center">
+                                    <button onclick="document.location='transfer_receiver.html'" class="transfer align-items-center">
                                         <i class="bi-arrow-up icons-size" ></i>
                                         <p>Transfer</p>
                                     </button>

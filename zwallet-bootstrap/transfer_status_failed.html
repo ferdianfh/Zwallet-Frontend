@@ -111,12 +111,12 @@
 
                     <!-- button continue for xs, sm -->
                     <div class="btn-continue d-flex d-md-none justify-content-center ">
-                        <button class="btn text-white w-100 p-2 shadow">Try Again</button>
+                        <button onclick="document.location='transfer_status_success.html'" class="btn text-white w-100 p-2 shadow">Try Again</button>
                     </div>
 
                     <!-- button continue for md -->
                     <div class="btn-continue d-md-flex d-none d-md-block justify-content-center ">
-                        <button class="btn text-white w-50 p-2 shadow">Try Again</button>
+                        <button onclick="document.location='transfer_status_success.html'" class="btn text-white w-50 p-2 shadow">Try Again</button>
                     </div>
                 </div>
 
@@ -126,15 +126,18 @@
                     <aside class="menu-bar col-lg-2 d-lg-flex flex-column justify-content-between animation-fade-in">
                         <section class="menu-bar-nav d-lg-flex flex-column mb-5 mt-2">
                             <a href="home.html">
-                                <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0 active-page">
+                                <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0 ">
                                     <i class="bi-grid ms-4 icons-size"></i>
                                     <p class="ms-4 mt-3">Dashboard</p>
                                 </div>
+                            </a>
+                            <a href="transfer_receiver.html">
+                                <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0 active-page">
+                                    <i class="bi-arrow-up ms-4 icons-size"></i>
+                                    <p class="ms-4 mt-3">Transfer</p>
+                                </div>
                             </a>                        
-                            <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
-                                <i class="bi-arrow-up ms-4 icons-size"></i>
-                                <p class="ms-4 mt-3">Transfer</p>
-                            </div>
+                            
                             <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
                                 <i class="bi-plus-lg ms-4 icons-size"></i>
                                 <p class="ms-4 mt-3">Top Up</p>
@@ -200,7 +203,7 @@
 
                         <!-- button continue lg, xl, xxl -->
                         <div class="btn-continue-desktop d-flex justify-content-end m-5">
-                            <button class="btn text-white w-25 p-2 shadow">Try Again</button>
+                            <button onclick="document.location='transfer_status_success.html'" class="btn text-white w-25 p-2 shadow">Try Again</button>
                         </div>
                     </section>
                 </div>
