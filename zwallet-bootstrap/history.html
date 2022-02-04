@@ -1,207 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zwallet | Transaction History</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style/style_web_app.css">
-
-
-</head>
-<body>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style/style_web_app.css" />
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row d-flex">
-            <header class="col-12 header-content d-flex flex-column animation-fade-in">
-                <!-- status bar xs, sm version -->
-                <div class="status-bars d-flex justify-content-between mb-3 d-md-none">
-                    <img src="src/timestyle.svg" alt="Time" >
-                    <img src="src/status-bars.svg" alt="Bars" >
+      <div class="row d-flex">
+        <header
+          class="col-12 header-content d-flex flex-column animation-fade-in"
+        >
+          <!-- status bar xs, sm version -->
+          <div
+            class="status-bars d-flex justify-content-between mb-3 d-md-none"
+          >
+            <img src="src/timestyle.svg" alt="Time" />
+            <img src="src/status-bars.svg" alt="Bars" />
+          </div>
+          <!-- status bar md version -->
+          <div
+            class="status-bars d-md-flex justify-content-md-between mb-3 d-none d-md-block d-lg-none"
+          >
+            <img src="src/timestyle-black.svg" alt="Time" />
+            <img src="src/status-bars-black.svg" alt="Bars" />
+          </div>
+
+          <!-- header content for xs, sm -->
+          <nav
+            class="nav-bar d-flex flex-row justify-content-between mb-4 mb-lg-1"
+          >
+            <div class="nav-mobile d-md-none d-flex flex-row ms-2">
+              <a href="home.html">
+                <i class="bi-arrow-left text-white icons-size"></i>
+              </a>
+              <p class="nav-title mb-0 mt-1 ms-4">History</p>
+            </div>
+
+            <!-- header content for md, lg, xl, xxl -->
+            <a href="home.html">
+              <h2 class="logo text-blue d-none d-md-block mt-3">Zwallet</h2>
+            </a>
+
+            <div class="user-profile d-md-flex flex-row d-none d-md-block">
+              <img
+                class="ms-2 me-4 user-pic"
+                src="src/robert.svg"
+                alt="Robert"
+              />
+              <div class="user-profile-name me-4">
+                <p class="name mb-0">Robert Chandler</p>
+                <p class="phone mb-0">+62 8139 3877 7946</p>
+              </div>
+              <i class="bi-bell mt-2 notif icons-size"></i>
+            </div>
+          </nav>
+        </header>
+
+        <main class="col-12 main-content">
+          <!-- main content for xs, sm, md -->
+          <div class="small-screen-content d-lg-none animation-pull-out">
+            <p class="weekly ms-3">This Week</p>
+
+            <div
+              class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2"
+            >
+              <img src="src/samuel.svg" alt="Samuel" />
+              <div class="profile-description">
+                <p class="profile-desc-name mb-0">Samuel Suhi</p>
+                <p class="profile-desc mb-0">Transfer</p>
+              </div>
+              <p class="nominal-transfer">+Rp50.000</p>
+            </div>
+            <div
+              class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2"
+            >
+              <img src="src/spotify.png" alt="Spotify" />
+              <div class="profile-description">
+                <p class="profile-desc-name mb-0">Spotify</p>
+                <p class="profile-desc mb-0">Subscription</p>
+              </div>
+              <p class="nominal-subscription">-Rp49.000</p>
+            </div>
+
+            <p class="monthly ms-3">This Month</p>
+
+            <div
+              class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2"
+            >
+              <img src="src/netflix.svg" alt="Netflix" />
+              <div class="profile-description">
+                <p class="profile-desc-name mb-0">Netflix</p>
+                <p class="profile-desc mb-0">Subscription</p>
+              </div>
+              <p class="nominal-subscription">-Rp149.000</p>
+            </div>
+            <div
+              class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2"
+            >
+              <img src="src/bobi.png" alt="Bobi" />
+              <div class="profile-description">
+                <p class="profile-desc-name mb-0">Bobi Sammy</p>
+                <p class="profile-desc mb-0">Transfer</p>
+              </div>
+              <p class="nominal-transfer">+Rp1.150.000</p>
+            </div>
+            <div
+              class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2"
+            >
+              <img src="src/momo.svg" alt="Momo" />
+              <div class="profile-description">
+                <p class="profile-desc-name mb-0">Momo Taro</p>
+                <p class="profile-desc mb-0">Transfer</p>
+              </div>
+              <p class="nominal-transfer">-Rp200.000</p>
+            </div>
+
+            <!-- button transaction history -->
+            <div class="row-cols-3 btn btn-history d-flex flex-row m-0 p-2">
+              <button class="col-2 income m-1">
+                <i class="bi-arrow-up text-green icons-size"></i>
+              </button>
+              <button class="col-2 expense m-1">
+                <i class="bi-arrow-down text-red icons-size"></i>
+              </button>
+              <button class="col-6 calendar ms-5 m-1 me-2 icons-size">
+                Filter by Date
+              </button>
+            </div>
+          </div>
+
+          <!-- main content for lg, xl, xxl -->
+          <div class="big-screen-content d-none d-lg-block d-lg-flex mt-lg-2">
+            <aside
+              class="menu-bar col-lg-2 d-lg-flex flex-column animation-fade-in"
+            >
+              <section class="menu-bar-nav d-lg-flex flex-column mb-5 mt-2">
+                <a href="home.html">
+                  <div
+                    class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0 active-page"
+                  >
+                    <i class="bi-grid ms-4" style="font-size: 1.7em"></i>
+                    <p class="ms-4 mt-3">Dashboard</p>
+                  </div>
+                </a>
+                <div
+                  class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0"
+                >
+                  <i class="bi-arrow-up ms-4" style="font-size: 1.7em"></i>
+                  <p class="ms-4 mt-3">Transfer</p>
                 </div>
-                <!-- status bar md version -->
-                <div class="status-bars d-md-flex justify-content-md-between mb-3 d-none d-md-block d-lg-none">
-                    <img src="src/timestyle-black.svg" alt="Time" >
-                    <img src="src/status-bars-black.svg" alt="Bars" >
+                <div
+                  class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0"
+                >
+                  <i class="bi-plus-lg ms-4" style="font-size: 1.7em"></i>
+                  <p class="ms-4 mt-3">Top Up</p>
                 </div>
-
-                <!-- header content for xs, sm -->
-                <nav class="nav-bar d-flex flex-row justify-content-between mb-4 mb-lg-1">
-                    <div class="nav-mobile d-md-none d-flex flex-row ms-2">
-                        <a href="home.html">
-                            <i class="bi-arrow-left text-white icons-size"></i>
-                        </a>
-                        <p class="nav-title mb-0 mt-1 ms-4">History</p>
-                    </div>
-                    
-                    <!-- header content for md, lg, xl, xxl -->
-                    <a href="home.html">
-                        <h2 class="logo text-blue d-none d-md-block mt-3">Zwallet</h2>
-                    </a>
-                    
-                    <div class="user-profile d-md-flex flex-row d-none d-md-block">
-                        <img class="ms-2 me-4 user-pic" src="src/robert.svg" alt="Robert" >
-                        <div class="user-profile-name me-4">
-                            <p class="name mb-0">Robert Chandler</p>
-                            <p class="phone mb-0">+62 8139 3877 7946</p>
-                        </div>
-                        <i class="bi-bell mt-2 notif icons-size"></i>
-                    </div>
-                </nav>
-            </header>
-
-            <main class="col-12 main-content">
-                <!-- main content for xs, sm, md -->
-                <div class="small-screen-content d-lg-none animation-pull-out">
-                    <p class="weekly ms-3">This Week</p>
-    
-                    <div class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2">
-                        <img src="src/samuel.svg" alt="Samuel">
-                        <div class="profile-description">
-                            <p class="profile-desc-name mb-0">Samuel Suhi</p> 
-                            <p class="profile-desc mb-0">Transfer</p>
-                        </div>
-                        <p class="nominal-transfer">+Rp50.000</p>
-                    </div>
-                    <div class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2">
-                        <img src="src/spotify.png" alt="Spotify">
-                        <div class="profile-description">
-                            <p class="profile-desc-name mb-0">Spotify</p> 
-                            <p class="profile-desc mb-0">Subscription</p>
-                        </div>
-                        <p class="nominal-subscription">-Rp49.000</p>
-                    </div>
-
-                    <p class="monthly ms-3">This Month</p>
-
-                    <div class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2">
-                        <img src="src/netflix.svg" alt="Netflix">
-                        <div class="profile-description">
-                            <p class="profile-desc-name mb-0">Netflix</p> 
-                            <p class="profile-desc mb-0">Subscription</p>
-                        </div>
-                        <p class="nominal-subscription">-Rp149.000</p>
-                    </div>
-                    <div class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2">
-                        <img src="src/bobi.png" alt="Bobi">
-                        <div class="profile-description">
-                            <p class="profile-desc-name mb-0">Bobi Sammy</p> 
-                            <p class="profile-desc mb-0">Transfer</p>
-                        </div>
-                        <p class="nominal-transfer">+Rp1.150.000</p>
-                    </div>
-                    <div class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 pt-2 pb-2">
-                        <img src="src/momo.svg" alt="Momo">
-                        <div class="profile-description">
-                            <p class="profile-desc-name mb-0">Momo Taro</p> 
-                            <p class="profile-desc mb-0">Transfer</p>
-                        </div>
-                        <p class="nominal-transfer">-Rp200.000</p>
-                    </div>
-
-                    <!-- button transaction history -->
-                    <div class="row-cols-3 btn btn-history d-flex flex-row m-0 p-2">
-                        <button class="col-2 income m-1">
-                            <i class="bi-arrow-up text-green icons-size" ></i>
-                        </button>
-                        <button class="col-2 expense m-1">
-                            <i class="bi-arrow-down text-red icons-size"></i>
-                        </button>
-                        <button class="col-6 calendar ms-5 m-1 me-2 icons-size">Filter by Date</button>
-                    </div>
+                <div
+                  class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0"
+                >
+                  <i class="bi-person ms-4" style="font-size: 1.7em"></i>
+                  <p class="ms-4 mt-3">Profile</p>
                 </div>
-                
-                <!-- main content for lg, xl, xxl -->
-                <div class="big-screen-content d-none d-lg-block d-lg-flex mt-lg-2">
-                    <aside class="menu-bar col-lg-2 d-lg-flex flex-column animation-fade-in">
-                        <section class="menu-bar-nav d-lg-flex flex-column mb-5 mt-2">
-                            <a href="home.html">
-                                <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0 active-page">
-                                    <i class="bi-grid ms-4" style="font-size: 1.7em;"></i>
-                                    <p class="ms-4 mt-3">Dashboard</p>
-                                </div>
-                            </a>                        
-                            <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
-                                <i class="bi-arrow-up ms-4" style="font-size: 1.7em;"></i>
-                                <p class="ms-4 mt-3">Transfer</p>
-                            </div>
-                            <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
-                                <i class="bi-plus-lg ms-4" style="font-size: 1.7em;"></i>
-                                <p class="ms-4 mt-3">Top Up</p>
-                            </div>
-                            <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
-                                <i class="bi-person ms-4" style="font-size: 1.7em;"></i>
-                                <p class="ms-4 mt-3">Profile</p>
-                            </div>
-                        </section>
-                        <section class="menu-bar-log mt-5 mb-2">
-                            <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
-                                <i class="bi-box-arrow-in-right ms-4" style="font-size: 1.7em;"></i>
-                                <p class="ms-4 mt-3">Log Out</p>
-                            </div>
-                        </section>
-                    </aside>
-
-                    <section class="content-bar big-screen col-lg-8 animation-pull-out">
-                        <p class="history-title mt-3 ms-4">Transaction History</p>
-
-                        <p class="weekly ms-4">This Week</p>
-    
-                        <div class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 ms-3 me-3 pt-2 pb-2">
-                            <img class="ms-3" src="src/samuel.svg" alt="Samuel">
-                            <div class="profile-description history-page">
-                                <p class="profile-desc-name mb-0">Samuel Suhi</p> 
-                                <p class="profile-desc mb-0">Transfer</p>
-                            </div>
-                            <p class="nominal-transfer me-3">+Rp50.000</p>
-                        </div>
-                        <div class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 ms-3 me-3 pt-2 pb-2">
-                            <img class="ms-3" src="src/netflix.svg" alt="Netflix">
-                            <div class="profile-description history-page">
-                                <p class="profile-desc-name mb-0">Netflix</p> 
-                                <p class="profile-desc mb-0">Subscription</p>
-                            </div>
-                            <p class="nominal-subscription me-3">-Rp149.000</p>
-                        </div>
-
-                        <p class="monthly ms-4">This Month</p>
-
-                        <div class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 ms-3 me-3 pt-2 pb-2">
-                            <img class="ms-3" src="src/christine.svg" alt="Christine">
-                            <div class="profile-description history-page">
-                                <p class="profile-desc-name mb-0">Christine Marimar</p> 
-                                <p class="profile-desc mb-0">Transfer</p>
-                            </div>
-                            <p class="nominal-transfer me-3">+Rp150.000</p>
-                        </div>
-                        <div class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 ms-3 me-3 pt-2 pb-2">
-                            <img class="ms-3" src="src/adobe.svg" alt="Adobe">
-                            <div class="profile-description history-page">
-                                <p class="profile-desc-name mb-0">Adobe Inc.</p> 
-                                <p class="profile-desc mb-0">Transfer</p>
-                            </div>
-                            <p class="nominal-subscription me-3">-Rp259.000</p>
-                        </div>
-                    </section>
+              </section>
+              <section class="menu-bar-log mt-5 mb-2">
+                <div
+                  class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0"
+                >
+                  <i
+                    class="bi-box-arrow-in-right ms-4"
+                    style="font-size: 1.7em"
+                  ></i>
+                  <p class="ms-4 mt-3">Log Out</p>
                 </div>
-                
-            </main>
+              </section>
+            </aside>
 
-            <footer class="col-md-12 footer-content d-none d-md-block d-md-flex flex-row justify-content-between mb-0 animation-fade-in">
-                <p class="copyright">2020 Zwallet. All right reserved.</p>
-                <div class="contact d-md-flex flex-row">
-                    <p>+62 5637 8882 9901</p>
-                    <p>contact@zwallet.com</p> 
+            <section class="content-bar big-screen col-lg-8 animation-pull-out">
+              <p class="history-title mt-3 ms-4">Transaction History</p>
+
+              <p class="weekly ms-4">This Week</p>
+
+              <div
+                class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 ms-3 me-3 pt-2 pb-2"
+              >
+                <img class="ms-3" src="src/samuel.svg" alt="Samuel" />
+                <div class="profile-description history-page">
+                  <p class="profile-desc-name mb-0">Samuel Suhi</p>
+                  <p class="profile-desc mb-0">Transfer</p>
                 </div>
-            </footer>
-        </div>
+                <p class="nominal-transfer me-3">+Rp50.000</p>
+              </div>
+              <div
+                class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 ms-3 me-3 pt-2 pb-2"
+              >
+                <img class="ms-3" src="src/netflix.svg" alt="Netflix" />
+                <div class="profile-description history-page">
+                  <p class="profile-desc-name mb-0">Netflix</p>
+                  <p class="profile-desc mb-0">Subscription</p>
+                </div>
+                <p class="nominal-subscription me-3">-Rp149.000</p>
+              </div>
+
+              <p class="monthly ms-4">This Month</p>
+
+              <div
+                class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 ms-3 me-3 pt-2 pb-2"
+              >
+                <img class="ms-3" src="src/christine.svg" alt="Christine" />
+                <div class="profile-description history-page">
+                  <p class="profile-desc-name mb-0">Christine Marimar</p>
+                  <p class="profile-desc mb-0">Transfer</p>
+                </div>
+                <p class="nominal-transfer me-3">+Rp150.000</p>
+              </div>
+              <div
+                class="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-4 ms-3 me-3 pt-2 pb-2"
+              >
+                <img class="ms-3" src="src/adobe.svg" alt="Adobe" />
+                <div class="profile-description history-page">
+                  <p class="profile-desc-name mb-0">Adobe Inc.</p>
+                  <p class="profile-desc mb-0">Transfer</p>
+                </div>
+                <p class="nominal-subscription me-3">-Rp259.000</p>
+              </div>
+            </section>
+          </div>
+        </main>
+
+        <footer
+          class="col-md-12 footer-content d-none d-md-block d-md-flex flex-row justify-content-between mb-0 animation-fade-in"
+        >
+          <p class="copyright">2020 Zwallet. All right reserved.</p>
+          <div class="contact d-md-flex flex-row">
+            <p>+62 5637 8882 9901</p>
+            <p>contact@zwallet.com</p>
+          </div>
+        </footer>
+      </div>
     </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

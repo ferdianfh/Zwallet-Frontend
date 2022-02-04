@@ -1,232 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zwallet | Transfer Status: Success</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style/style_web_app.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style/style_web_app.css" />
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row d-flex">
-            <header class="col-12 header-content d-flex flex-column animation-fade-in">
-                <!-- status bar xs, sm version -->
-                <div class="status-bars d-flex justify-content-between mb-3 d-md-none">
-                    <img src="src/timestyle.svg" alt="Time" >
-                    <img src="src/status-bars.svg" alt="Bars" >
+      <div class="row d-flex">
+        <header
+          class="col-12 header-content d-flex flex-column animation-fade-in"
+        >
+          <!-- status bar xs, sm version -->
+          <div
+            class="status-bars d-flex justify-content-between mb-3 d-md-none"
+          >
+            <img src="src/timestyle.svg" alt="Time" />
+            <img src="src/status-bars.svg" alt="Bars" />
+          </div>
+          <!-- status bar md version -->
+          <div
+            class="status-bars d-md-flex justify-content-md-between mb-3 d-none d-md-block d-lg-none"
+          >
+            <img src="src/timestyle-black.svg" alt="Time" />
+            <img src="src/status-bars-black.svg" alt="Bars" />
+          </div>
+
+          <!-- header content for xs, sm -->
+          <nav
+            class="nav-bar d-flex flex-column flex-md-row justify-content-between mb-4 mb-lg-1"
+          >
+            <div
+              class="nav-mobile d-md-none d-flex flex-row ms-2 me-2 justify-content-center"
+            >
+              <p class="nav-title mb-0 mt-1">Transfer Details</p>
+            </div>
+
+            <!-- header content for md, lg, xl, xxl -->
+            <h2 class="logo text-blue d-none d-md-block mt-3">Zwallet</h2>
+            <div class="user-profile d-md-flex flex-row d-none d-md-block">
+              <img
+                class="ms-2 me-4 user-pic"
+                src="src/robert.svg"
+                alt="Robert"
+              />
+              <div class="user-profile-name me-4">
+                <p class="name mb-0">Robert Chandler</p>
+                <p class="phone mb-0">+62 8139 3877 7946</p>
+              </div>
+              <i class="bi-bell mt-2 notif icons-size"></i>
+            </div>
+          </nav>
+        </header>
+
+        <main class="col-12 main-content">
+          <!-- main content for xs, sm, md -->
+          <div class="small-screen-content d-lg-none animation-pull-out">
+            <div class="d-flex flex-column align-items-center p-2 mb-3 mt-3">
+              <img
+                class="img-status"
+                src="src/success.svg"
+                alt="Success"
+                width="72px"
+              />
+              <p class="history-title mt-3 ms-4 me-4">Transfer Success</p>
+            </div>
+
+            <div class="row mt-5 me-1">
+              <div class="col-5 ms-3 ms-md-5 confirm-items">
+                <p class="text-title m-2">Amount</p>
+                <p class="text-content m-2">Rp100.000</p>
+              </div>
+              <div class="col-5 offset-1 confirm-items mt-md-1">
+                <p class="text-title m-2">Balance Left</p>
+                <p class="text-content m-2">Rp20.000</p>
+              </div>
+            </div>
+            <div class="row mt-3 mt-md-1 me-1">
+              <div class="col-5 ms-3 ms-md-5 confirm-items">
+                <p class="text-title m-2">Date</p>
+                <p class="text-content m-2">May, 11 2020</p>
+              </div>
+              <div class="col-5 offset-1 confirm-items mt-md-1">
+                <p class="text-title m-2">Time</p>
+                <p class="text-content m-2">12.20</p>
+              </div>
+            </div>
+            <div class="row mt-3 mt-md-1 mb-md-3 me-1">
+              <div class="col-11 ms-3 ms-md-5 confirm-items">
+                <p class="text-title m-2">Notes</p>
+                <p class="text-content m-2">For buying some socks</p>
+              </div>
+            </div>
+
+            <p class="text-content m-2 ms-md-5">From</p>
+
+            <div class="d-flex receivers p-2 mb-3 mt-3 ms-2 ms-md-4 me-4">
+              <img
+                class="receiver-picture ms-4"
+                src="src/robert.svg"
+                alt="Robert"
+              />
+              <div class="receiver-detail ms-3">
+                <p class="text-title-name mb-0">Robert Chandler</p>
+                <p class="weekly mt-1">+62 8139 3877 7946</p>
+              </div>
+            </div>
+
+            <p class="text-content m-2 ms-md-5">To</p>
+
+            <div class="d-flex receivers p-2 mb-3 mt-3 ms-2 ms-md-4 me-4">
+              <img
+                class="receiver-picture ms-4"
+                src="src/samuel.svg"
+                alt="Samuel"
+              />
+              <div class="receiver-detail ms-3">
+                <p class="text-title-name mb-0">Samuel Suhi</p>
+                <p class="weekly mt-1">+62 813-8492-9994</p>
+              </div>
+            </div>
+
+            <!-- button continue for xs, sm -->
+            <div class="btn-continue d-flex d-md-none justify-content-center">
+              <button
+                onclick="document.location='home.html'"
+                class="btn text-white w-100 p-2 shadow"
+              >
+                Back to Home
+              </button>
+            </div>
+
+            <!-- button continue for md -->
+            <div
+              class="btn-continue d-md-flex d-none d-md-block justify-content-center"
+            >
+              <button
+                onclick="document.location='home.html'"
+                class="btn text-white w-50 p-2 shadow"
+              >
+                Back to Home
+              </button>
+            </div>
+          </div>
+
+          <!-- main content for lg, xl, xxl -->
+          <div class="big-screen-content d-none d-lg-block d-lg-flex mt-lg-2">
+            <aside
+              class="menu-bar col-lg-2 d-lg-flex flex-column justify-content-between animation-fade-in"
+            >
+              <section class="menu-bar-nav d-lg-flex flex-column mb-5 mt-2">
+                <a href="home.html">
+                  <div
+                    class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0"
+                  >
+                    <i class="bi-grid ms-4 icons-size"></i>
+                    <p class="ms-4 mt-3">Dashboard</p>
+                  </div>
+                </a>
+                <a href="transfer_receiver.html">
+                  <div
+                    class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0 active-page"
+                  >
+                    <i class="bi-arrow-up ms-4 icons-size"></i>
+                    <p class="ms-4 mt-3">Transfer</p>
+                  </div>
+                </a>
+
+                <div
+                  class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0"
+                >
+                  <i class="bi-plus-lg ms-4 icons-size"></i>
+                  <p class="ms-4 mt-3">Top Up</p>
                 </div>
-                <!-- status bar md version -->
-                <div class="status-bars d-md-flex justify-content-md-between mb-3 d-none d-md-block d-lg-none">
-                    <img src="src/timestyle-black.svg" alt="Time" >
-                    <img src="src/status-bars-black.svg" alt="Bars" >
+                <div
+                  class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0"
+                >
+                  <i class="bi-person ms-4 icons-size"></i>
+                  <p class="ms-4 mt-3">Profile</p>
                 </div>
-
-                <!-- header content for xs, sm -->
-                <nav class="nav-bar d-flex flex-column flex-md-row justify-content-between mb-4 mb-lg-1">
-                    <div class="nav-mobile d-md-none d-flex flex-row ms-2 me-2 justify-content-center ">
-                        <p class="nav-title mb-0 mt-1 ">Transfer Details</p>
-                    </div>
-
-                    
-                    <!-- header content for md, lg, xl, xxl -->
-                    <h2 class="logo text-blue d-none d-md-block mt-3">Zwallet</h2>
-                    <div class="user-profile d-md-flex flex-row d-none d-md-block">
-                        <img class="ms-2 me-4 user-pic" src="src/robert.svg" alt="Robert" >
-                        <div class="user-profile-name me-4">
-                            <p class="name mb-0">Robert Chandler</p>
-                            <p class="phone mb-0">+62 8139 3877 7946</p>
-                        </div>
-                        <i class="bi-bell mt-2 notif icons-size"></i>
-                    </div>
-                </nav>
-            </header>
-
-            <main class="col-12 main-content">
-                <!-- main content for xs, sm, md -->
-                <div class="small-screen-content d-lg-none animation-pull-out">
-                    
-                    <div class=" d-flex flex-column align-items-center p-2 mb-3 mt-3 ">
-                        <img class="img-status" src="src/success.svg" alt="Success" width="72px">
-                        <p class="history-title mt-3 ms-4 me-4">Transfer Success</p>
-                    </div>
-
-                    <div class="row mt-5 me-1">
-                        <div class="col-5 ms-3 ms-md-5 confirm-items ">
-                            <p class="text-title m-2">Amount</p>
-                            <p class="text-content m-2">Rp100.000</p>
-                        </div>
-                        <div class="col-5 offset-1 confirm-items mt-md-1">
-                            <p class="text-title m-2">Balance Left</p>
-                            <p class="text-content m-2">Rp20.000</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3 mt-md-1 me-1">
-                        <div class="col-5 ms-3 ms-md-5 confirm-items ">
-                            <p class="text-title m-2">Date</p>
-                            <p class="text-content m-2">May, 11 2020</p>
-                        </div>
-                        <div class="col-5 offset-1 confirm-items mt-md-1">
-                            <p class="text-title m-2">Time</p>
-                            <p class="text-content m-2">12.20</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3 mt-md-1 mb-md-3 me-1">
-                        <div class="col-11 ms-3 ms-md-5 confirm-items ">
-                            <p class="text-title m-2">Notes</p>
-                            <p class="text-content m-2">For buying some socks</p>
-                        </div>
-                    </div>
-
-                    <p class="text-content m-2 ms-md-5">From</p>
-
-                    <div class="d-flex receivers p-2 mb-3 mt-3 ms-2 ms-md-4 me-4 ">
-                        <img class="receiver-picture ms-4" src="src/robert.svg" alt="Robert">
-                        <div class="receiver-detail ms-3">
-                            <p class="text-title-name mb-0">Robert Chandler</p>
-                            <p class="weekly mt-1">+62 8139 3877 7946</p>
-                        </div>
-                    </div>
-
-                    <p class="text-content m-2 ms-md-5">To</p>
-
-                    <div class="d-flex receivers p-2 mb-3 mt-3 ms-2 ms-md-4 me-4 ">
-                        <img class="receiver-picture ms-4" src="src/samuel.svg" alt="Samuel">
-                        <div class="receiver-detail ms-3">
-                            <p class="text-title-name mb-0">Samuel Suhi</p>
-                            <p class="weekly mt-1">+62 813-8492-9994</p>
-                        </div>
-                    </div>
-
-                    <!-- button continue for xs, sm -->
-                    <div class="btn-continue d-flex d-md-none justify-content-center ">
-                        <button onclick="document.location='home.html'" class="btn text-white w-100 p-2 shadow">Back to Home</button>
-                    </div>
-
-                    <!-- button continue for md -->
-                    <div class="btn-continue d-md-flex d-none d-md-block justify-content-center ">
-                        <button onclick="document.location='home.html'" class="btn text-white w-50 p-2 shadow">Back to Home</button>
-                    </div>
+              </section>
+              <section class="menu-bar-log mt-5 mb-2">
+                <div
+                  class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0"
+                >
+                  <i class="bi-box-arrow-in-right ms-4 icons-size"></i>
+                  <p class="ms-4 mt-3">Log Out</p>
                 </div>
+              </section>
+            </aside>
 
-                
-                <!-- main content for lg, xl, xxl -->
-                <div class="big-screen-content d-none d-lg-block d-lg-flex mt-lg-2">
-                    <aside class="menu-bar col-lg-2 d-lg-flex flex-column justify-content-between animation-fade-in">
-                        <section class="menu-bar-nav d-lg-flex flex-column mb-5 mt-2">
-                            <a href="home.html">
-                                <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0 ">
-                                    <i class="bi-grid ms-4 icons-size"></i>
-                                    <p class="ms-4 mt-3">Dashboard</p>
-                                </div>
-                            </a>
-                            <a href="transfer_receiver.html">
-                                <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0 active-page">
-                                    <i class="bi-arrow-up ms-4 icons-size"></i>
-                                    <p class="ms-4 mt-3">Transfer</p>
-                                </div>
-                            </a>                        
-                            
-                            <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
-                                <i class="bi-plus-lg ms-4 icons-size"></i>
-                                <p class="ms-4 mt-3">Top Up</p>
-                            </div>
-                            <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
-                                <i class="bi-person ms-4 icons-size"></i>
-                                <p class="ms-4 mt-3">Profile</p>
-                            </div>
-                        </section>
-                        <section class="menu-bar-log mt-5 mb-2">
-                            <div class="menu-items d-lg-flex align-items-center m-2 ms-0 me-0">
-                                <i class="bi-box-arrow-in-right ms-4 icons-size"></i>
-                                <p class="ms-4 mt-3">Log Out</p>
-                            </div>
-                        </section>
-                    </aside>
+            <section
+              class="content-bar big-screen col-lg-8 d-flex flex-column animation-pull-out"
+            >
+              <div class="d-flex flex-column align-items-center p-2 mb-3 mt-3">
+                <img
+                  class="img-status"
+                  src="src/success.svg"
+                  alt="Success"
+                  width="72px"
+                />
+                <p class="history-title mt-3 ms-4 me-4">Transfer Success</p>
+              </div>
 
-                    <section class="content-bar big-screen col-lg-8 d-flex flex-column animation-pull-out">
-
-                        <div class=" d-flex flex-column align-items-center p-2 mb-3 mt-3 ">
-                            <img class="img-status" src="src/success.svg" alt="Success" width="72px">
-                            <p class="history-title mt-3 ms-4 me-4">Transfer Success</p>
-                        </div>
-
-                        <div class="details-transfer ms-2 me-2">
-                            <div class="row mt-2">
-                                <div class="col-5 col-md-11 ms-3 ms-md-5 me-md-5 confirm-items ">
-                                    <p class="text-title m-2">Amount</p>
-                                    <p class="text-content m-2">Rp100.000</p>
-                                </div>
-                                <div class="col-5 col-md-11 offset-1 ms-md-5 me-md-5 confirm-items mt-md-1">
-                                    <p class="text-title m-2">Balance Left</p>
-                                    <p class="text-content m-2">Rp20.000</p>
-                                </div>
-                            </div>
-                            <div class="row mt-5 mt-md-1">
-                                <div class="col-5 col-md-11 ms-3 ms-md-5 me-md-5 confirm-items ">
-                                    <p class="text-title m-2">Date & Time</p>
-                                    <p class="text-content m-2">May, 11 2020 - 12.20</p>
-                                </div>
-                            </div>
-                            <div class="row mt-5 mt-md-1 mb-md-5 mb-lg-1">
-                                <div class="col-11 ms-3 ms-md-5 me-md-5 confirm-items ">
-                                    <p class="text-title m-2">Notes</p>
-                                    <p class="text-content m-2">For buying some socks</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="history-title mt-3 ms-5">Transfer to</p>
-
-                        <!-- receiver lg, xl, xxl -->
-                        <div class="d-flex receivers p-1 mb-3 mt-3 ms-5 me-4 ">
-                            <img class="receiver-picture ms-4" src="src/samuel.svg" alt="Samuel">
-                            <div class="receiver-detail ms-3 mt-2">
-                                <p class="text-title-name mb-0">Samuel Suhi</p>
-                                <p class="weekly mt-1">+62 813-8492-9994</p>
-                            </div>
-                        </div>
-                        
-
-                        <!-- button continue lg, xl, xxl -->
-                        <div class="buttons d-flex flex-row justify-content-end">
-                            <div class="mt-5 mb-4 me-2">
-                                <button class="btn btn-share w-100 p-2 shadow " >
-                                    <i class="bi-share"></i>
-                                </button>
-                            </div>
-                            <div class="mt-5 mb-4 me-1">
-                                <button class="btn btn-share d-flex flex-row w-100 p-2 text-blue shadow">
-                                    <i class="bi-download me-2"></i>
-                                    Download
-                                </button>
-                            </div>                        
-                            <div class="btn-continue-desktop d-flex mt-5 mb-4 me-5 ms-1">
-                                <button onclick="document.location='home.html'" class="btn text-white w-100 p-2 shadow">Back to Home</button>
-                            </div>
-                        </div>
-                    </section>
+              <div class="details-transfer ms-2 me-2">
+                <div class="row mt-2">
+                  <div
+                    class="col-5 col-md-11 ms-3 ms-md-5 me-md-5 confirm-items"
+                  >
+                    <p class="text-title m-2">Amount</p>
+                    <p class="text-content m-2">Rp100.000</p>
+                  </div>
+                  <div
+                    class="col-5 col-md-11 offset-1 ms-md-5 me-md-5 confirm-items mt-md-1"
+                  >
+                    <p class="text-title m-2">Balance Left</p>
+                    <p class="text-content m-2">Rp20.000</p>
+                  </div>
                 </div>
-                
-            </main>
-
-            <footer class="col-md-12 footer-content d-none d-md-block d-md-flex flex-row justify-content-between mb-0 animation-fade-in">
-                <p class="copyright">2020 Zwallet. All right reserved.</p>
-                <div class="contact d-md-flex flex-row">
-                    <p>+62 5637 8882 9901</p>
-                    <p>contact@zwallet.com</p> 
+                <div class="row mt-5 mt-md-1">
+                  <div
+                    class="col-5 col-md-11 ms-3 ms-md-5 me-md-5 confirm-items"
+                  >
+                    <p class="text-title m-2">Date & Time</p>
+                    <p class="text-content m-2">May, 11 2020 - 12.20</p>
+                  </div>
                 </div>
-            </footer>
-        </div>
+                <div class="row mt-5 mt-md-1 mb-md-5 mb-lg-1">
+                  <div class="col-11 ms-3 ms-md-5 me-md-5 confirm-items">
+                    <p class="text-title m-2">Notes</p>
+                    <p class="text-content m-2">For buying some socks</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="history-title mt-3 ms-5">Transfer to</p>
+
+              <!-- receiver lg, xl, xxl -->
+              <div class="d-flex receivers p-1 mb-3 mt-3 ms-5 me-4">
+                <img
+                  class="receiver-picture ms-4"
+                  src="src/samuel.svg"
+                  alt="Samuel"
+                />
+                <div class="receiver-detail ms-3 mt-2">
+                  <p class="text-title-name mb-0">Samuel Suhi</p>
+                  <p class="weekly mt-1">+62 813-8492-9994</p>
+                </div>
+              </div>
+
+              <!-- button continue lg, xl, xxl -->
+              <div class="buttons d-flex flex-row justify-content-end">
+                <div class="mt-5 mb-4 me-2">
+                  <button class="btn btn-share w-100 p-2 shadow">
+                    <i class="bi-share"></i>
+                  </button>
+                </div>
+                <div class="mt-5 mb-4 me-1">
+                  <button
+                    class="btn btn-share d-flex flex-row w-100 p-2 text-blue shadow"
+                  >
+                    <i class="bi-download me-2"></i>
+                    Download
+                  </button>
+                </div>
+                <div class="btn-continue-desktop d-flex mt-5 mb-4 me-5 ms-1">
+                  <button
+                    onclick="document.location='home.html'"
+                    class="btn text-white w-100 p-2 shadow"
+                  >
+                    Back to Home
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+
+        <footer
+          class="col-md-12 footer-content d-none d-md-block d-md-flex flex-row justify-content-between mb-0 animation-fade-in"
+        >
+          <p class="copyright">2020 Zwallet. All right reserved.</p>
+          <div class="contact d-md-flex flex-row">
+            <p>+62 5637 8882 9901</p>
+            <p>contact@zwallet.com</p>
+          </div>
+        </footer>
+      </div>
     </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
